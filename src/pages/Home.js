@@ -525,70 +525,70 @@ const Home = () => {
                 <div className="cs-slider_container" data-autoplay="1" data-loop="1" data-speed="1000" data-center="0" data-variable-width="1" data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="2" data-md-slides="2" data-lg-slides="2" data-add-slides="3">
                   <div className="cs-slider_wrapper">
                     <div className="cs-slide">
-                      <div className="cs-post cs-style1">
+                      <div className="cs-post cs-style1" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                         <a href="/blog" className="cs-post_thumb">
                           <img src="/assets/img/post_1.jpeg" alt="Post" />
                           <div className="cs-post_overlay"></div>
                         </a>
-                        <div className="cs-post_info">
+                        <div className="cs-post_info" style={{flex: '1', display: 'flex', flexDirection: 'column'}}>
                           <div className="cs-posted_by">07 Mar 2022</div>
-                          <h2 className="cs-post_title">
+                          <h2 className="cs-post_title" style={{flex: '1'}}>
                             <a href="/blog">How to keep fear from ruining your art business with confident</a>
                           </h2>
                         </div>
                       </div>
                     </div>
                     <div className="cs-slide">
-                      <div className="cs-post cs-style1">
+                      <div className="cs-post cs-style1" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                         <a href="/blog" className="cs-post_thumb">
                           <img src="/assets/img/post_2.jpeg" alt="Post" />
                           <div className="cs-post_overlay"></div>
                         </a>
-                        <div className="cs-post_info">
+                        <div className="cs-post_info" style={{flex: '1', display: 'flex', flexDirection: 'column'}}>
                           <div className="cs-posted_by">10 Feb 2022</div>
-                          <h2 className="cs-post_title">
+                          <h2 className="cs-post_title" style={{flex: '1'}}>
                             <a href="/blog">Artistic mind will be great for creation anything</a>
                           </h2>
                         </div>
                       </div>
                     </div>
                     <div className="cs-slide">
-                      <div className="cs-post cs-style1">
+                      <div className="cs-post cs-style1" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                         <a href="/blog" className="cs-post_thumb">
                           <img src="/assets/img/post_3.jpeg" alt="Post" />
                           <div className="cs-post_overlay"></div>
                         </a>
-                        <div className="cs-post_info">
+                        <div className="cs-post_info" style={{flex: '1', display: 'flex', flexDirection: 'column'}}>
                           <div className="cs-posted_by">05 Apr 2022</div>
-                          <h2 className="cs-post_title">
+                          <h2 className="cs-post_title" style={{flex: '1'}}>
                             <a href="/blog">A.I will take over all job for human within next year</a>
                           </h2>
                         </div>
                       </div>
                     </div>
                     <div className="cs-slide">
-                      <div className="cs-post cs-style1">
+                      <div className="cs-post cs-style1" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                         <a href="/blog" className="cs-post_thumb">
                           <img src="/assets/img/post_4.jpeg" alt="Post" />
                           <div className="cs-post_overlay"></div>
                         </a>
-                        <div className="cs-post_info">
+                        <div className="cs-post_info" style={{flex: '1', display: 'flex', flexDirection: 'column'}}>
                           <div className="cs-posted_by">15 Jan 2022</div>
-                          <h2 className="cs-post_title">
+                          <h2 className="cs-post_title" style={{flex: '1'}}>
                             <a href="/blog">Professional design trends in 2022</a>
                           </h2>
                         </div>
                       </div>
                     </div>
                     <div className="cs-slide">
-                      <div className="cs-post cs-style1">
+                      <div className="cs-post cs-style1" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
                         <a href="/blog" className="cs-post_thumb">
                           <img src="/assets/img/post_5.jpeg" alt="Post" />
                           <div className="cs-post_overlay"></div>
                         </a>
-                        <div className="cs-post_info">
+                        <div className="cs-post_info" style={{flex: '1', display: 'flex', flexDirection: 'column'}}>
                           <div className="cs-posted_by">20 Dec 2021</div>
-                          <h2 className="cs-post_title">
+                          <h2 className="cs-post_title" style={{flex: '1'}}>
                             <a href="/blog">Creative solutions for modern businesses</a>
                           </h2>
                         </div>
