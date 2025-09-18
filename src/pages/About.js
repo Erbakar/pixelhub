@@ -1,9 +1,8 @@
 import React from 'react';
-import Layout from '../components/Layout';
 
 const About = () => {
   return (
-    <Layout>
+    <div>
       <div className="cs-page_heading cs-bg cs-center" data-src="/assets/img/about_hero_bg.jpeg">
         <div className="container">
           <div className="cs-page_heading_in">
@@ -150,7 +149,7 @@ const About = () => {
           </div>
         </div>
       </section>
-    </Layout>
+    </div>
   );
 };
 

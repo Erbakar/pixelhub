@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Layout from '../components/Layout';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -23,7 +22,7 @@ const Contact = () => {
   };
 
   return (
-    <Layout>
+    <div>
       <div className="cs-page_heading cs-bg cs-center" data-src="/assets/img/contact_hero_bg.jpeg">
         <div className="container">
           <div className="cs-page_heading_in">
@@ -161,7 +160,7 @@ const Contact = () => {
           title="Google Map"
         ></iframe>
       </div>
-    </Layout>
+    </div>
   );
 };
 

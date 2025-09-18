@@ -1,9 +1,8 @@
 import React from 'react';
-import Layout from '../components/Layout';
 
 const Portfolio = () => {
   return (
-    <Layout>
+    <div>
       <div className="cs-page_heading cs-bg cs-center" data-src="/assets/img/portfolio_hero_bg.jpeg">
         <div className="container">
           <div className="cs-page_heading_in">
@@ -123,7 +122,7 @@ const Portfolio = () => {
       </section>
 
       <div className="cs-height_145 cs-height_lg_80"></div>
-    </Layout>
+    </div>
   );
 };
 

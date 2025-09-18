@@ -1,9 +1,8 @@
 import React from 'react';
-import Layout from '../components/Layout';
 
 const Services = () => {
   return (
-    <Layout>
+    <div>
       <div className="cs-page_heading cs-bg cs-center" data-src="/assets/img/service_hero_bg.jpeg">
         <div className="container">
           <div className="cs-page_heading_in">
@@ -162,7 +161,7 @@ const Services = () => {
           </div>
         </div>
       </section>
-    </Layout>
+    </div>
   );
 };
 

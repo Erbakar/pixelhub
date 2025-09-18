@@ -292,6 +292,27 @@ const useScrollEffects = () => {
     return () => {
       window.removeEventListener('load', handleLoad);
       window.removeEventListener('scroll', handleScroll);
+      
+      // Cleanup sliders
+      const $ = window.$;
+      if ($) {
+        $('.cs-slider_wrapper').each(function() {
+          if ($(this).hasClass('slick-initialized')) {
+            $(this).slick('unslick');
+          }
+        });
+        $('.slider-for, .slider-nav').each(function() {
+          if ($(this).hasClass('slick-initialized')) {
+            $(this).slick('unslick');
+          }
+        });
+      }
+      
+      // Reset WOW animations
+      if (typeof window.WOW !== 'undefined') {
+        const wow = new window.WOW();
+        wow.init();
+      }
     };
     };
 
