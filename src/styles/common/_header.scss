@@ -18,10 +18,13 @@
   max-width: 180px;
 }
 .cs-site_header {
-  position: absolute;
+  position: relative;
   width: 100%;
   left: 0;
-  top: 10px;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(24, 24, 24, 0.1);
+  backdrop-filter: none;
   transition: all 0.4s ease;
 }
 .cs-site_header.cs-style1 {
@@ -43,8 +46,11 @@
 
 .cs-site_header.cs-style1 {
   &.cs-sticky-active {
-    background-color: $white;
-    box-shadow: 0 10px 10px -10px rgba(33, 43, 53, 0.1);
+    position: fixed !important;
+    top: 0 !important;
+    background-color: rgba(24, 24, 24, 0.98);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 10px -10px rgba(33, 43, 53, 0.3);
   }
 
   .cs-icon_btn {
@@ -300,33 +306,6 @@
   list-style: none;
 }
 
-// .cs-site_header.cs-style1.cs-sticky_header {
-//   transition: top 0.2s ease-in-out;
-//   &.cs-sticky_active {
-//     position: fixed;
-//     z-index: 200;
-//     // width: 100%;
-//     // top: 0;
-//     // left: 0;
-//   }
-// }
-.cs-sticky_header {
-  position: fixed !important;
-  width: 100%;
-  z-index: 999;
-}
-.cs-gescout_sticky {
-  position: fixed !important;
-  top: -110px;
-  opacity: 0;
-  transition: all 0.4s ease;
-  background-color: #000;
-}
-
-.cs-gescout_show {
-  top: 0 !important;
-  opacity: 1;
-}
 
 .cs-site_branding {
   display: inline-block;
@@ -740,6 +719,14 @@
   }
   .cs-site_header.cs-style1 {
     top: 0;
+    
+    &.cs-sticky-active {
+      position: fixed !important;
+      top: 0 !important;
+      background-color: rgba(24, 24, 24, 0.98);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 5px 15px -5px rgba(33, 43, 53, 0.3);
+    }
   }
   .cs-toolbox {
     margin-right: 45px;
