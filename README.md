@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# PixelHub React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bu proje, orijinal HTML/CSS/JS tabanlı "Arino" creative agency temasının React versiyonudur.
 
-## Available Scripts
+## Özellikler
 
-In the project directory, you can run:
+- ✅ Modern React (19.x) ile geliştirildi
+- ✅ React Router ile sayfa yönlendirmeleri
+- ✅ SCSS desteği
+- ✅ Responsive tasarım
+- ✅ Animasyonlar ve etkileşimli öğeler
+- ✅ SEO dostu yapı
+- ✅ Component tabanlı mimari
 
-### `npm start`
+## Sayfalar
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Ana Sayfa (Home)** - Hero section, hizmetler, istatistikler
+- **Hakkımızda (About)** - Şirket bilgileri, takım üyeleri
+- **Hizmetler (Services)** - Sunulan hizmetler
+- **Portföy (Portfolio)** - Çalışma örnekleri
+- **Blog** - Blog yazıları
+- **İletişim (Contact)** - İletişim formu ve bilgileri
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Kurulum
 
-### `npm test`
+1. Proje dizinine gidin:
+```bash
+cd pixelhub-react
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Bağımlılıkları yükleyin:
+```bash
+npm install
+```
 
-### `npm run build`
+3. Geliştirme sunucusunu başlatın:
+```bash
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Tarayıcınızda `http://localhost:3000` adresini açın.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Build
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Üretim için build almak için:
+```bash
+npm run build
+```
 
-### `npm run eject`
+## Proje Yapısı
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+src/
+├── components/          # Yeniden kullanılabilir bileşenler
+│   ├── Header.js       # Site başlığı
+│   ├── Footer.js       # Site alt bilgisi
+│   └── Layout.js       # Ana layout wrapper
+├── pages/              # Sayfa bileşenleri
+│   ├── Home.js         # Ana sayfa
+│   ├── About.js        # Hakkımızda
+│   ├── Services.js     # Hizmetler
+│   ├── Portfolio.js    # Portföy
+│   ├── Blog.js         # Blog
+│   └── Contact.js      # İletişim
+├── hooks/              # Custom React hooks
+│   ├── useScrollEffects.js      # Scroll efektleri
+│   └── useInteractiveEffects.js # Etkileşimli efektler
+├── styles/             # SCSS dosyaları
+└── App.js             # Ana uygulama bileşeni
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Özelleştirme
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Renk değişkenleri: `src/styles/default/_color_variable.scss`
+- Typography: `src/styles/default/_typography.scss`
+- Bileşen stilleri: `src/styles/shortcode/` klasörü
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Teknolojiler
 
-## Learn More
+- React 19.x
+- React Router DOM
+- SASS/SCSS
+- Modern JavaScript (ES6+)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Lisans
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Bu proje, orijinal Arino temasının React uyarlamasıdır.
