@@ -34,10 +34,10 @@ const Home = () => {
           <div className="cs-hero_social_title">Follow Us</div>
           <ul className="cs-hero_social_links">
             <li>
-              <a href="">Behance</a>
+              <a href="https://behance.net" target="_blank" rel="noopener noreferrer">Behance</a>
             </li>
             <li>
-              <a href="">Twitter</a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
             </li>
           </ul>
         </div>
@@ -204,8 +204,8 @@ const Home = () => {
                   <div className="cs-portfolio_bg" data-src="/assets/img/portfolio_1.jpeg"></div>
                   <div className="cs-portfolio_info">
                     <div className="cs-portfolio_info_bg cs-accent_bg"></div>
-                    <h2 className="cs-portfolio_title">Colorful Art Work</h2>
-                    <div className="cs-portfolio_subtitle">See Details</div>
+                    <h2 className="cs-portfolio_title">E-Commerce Dashboard</h2>
+                    <div className="cs-portfolio_subtitle">UI/UX Design</div>
                   </div>
                 </a>
               </div>
@@ -215,8 +215,8 @@ const Home = () => {
                   <div className="cs-portfolio_bg" data-src="/assets/img/portfolio_2.jpeg"></div>
                   <div className="cs-portfolio_info">
                     <div className="cs-portfolio_info_bg cs-accent_bg"></div>
-                    <h2 className="cs-portfolio_title">Web Development</h2>
-                    <div className="cs-portfolio_subtitle">See Details</div>
+                    <h2 className="cs-portfolio_title">Corporate Website</h2>
+                    <div className="cs-portfolio_subtitle">Web Development</div>
                   </div>
                 </a>
               </div>
@@ -226,8 +226,30 @@ const Home = () => {
                   <div className="cs-portfolio_bg" data-src="/assets/img/portfolio_3.jpeg"></div>
                   <div className="cs-portfolio_info">
                     <div className="cs-portfolio_info_bg cs-accent_bg"></div>
-                    <h2 className="cs-portfolio_title">Mobile App Design</h2>
-                    <div className="cs-portfolio_subtitle">See Details</div>
+                    <h2 className="cs-portfolio_title">Food Delivery App</h2>
+                    <div className="cs-portfolio_subtitle">Mobile Application</div>
+                  </div>
+                </a>
+              </div>
+              <div className="cs-slide">
+                <a href="/portfolio" className="cs-portfolio cs-style1 cs-bg">
+                  <div className="cs-portfolio_hover"></div>
+                  <div className="cs-portfolio_bg" data-src="/assets/img/portfolio_4.jpeg"></div>
+                  <div className="cs-portfolio_info">
+                    <div className="cs-portfolio_info_bg cs-accent_bg"></div>
+                    <h2 className="cs-portfolio_title">Tech Startup Branding</h2>
+                    <div className="cs-portfolio_subtitle">Logo Design</div>
+                  </div>
+                </a>
+              </div>
+              <div className="cs-slide">
+                <a href="/portfolio" className="cs-portfolio cs-style1 cs-bg">
+                  <div className="cs-portfolio_hover"></div>
+                  <div className="cs-portfolio_bg" data-src="/assets/img/portfolio_5.jpeg"></div>
+                  <div className="cs-portfolio_info">
+                    <div className="cs-portfolio_info_bg cs-accent_bg"></div>
+                    <h2 className="cs-portfolio_title">Banking App Interface</h2>
+                    <div className="cs-portfolio_subtitle">UI/UX Design</div>
                   </div>
                 </a>
               </div>
@@ -415,7 +437,7 @@ const Home = () => {
                   <div className="slider-nav_item">
                     <div className="cs-rotate_img">
                       <div className="cs-rotate_img_in">
-                        <img src="/assets/img/testimonial_1.jpeg" alt="Nav Image" />
+                        <img src="/assets/img/testimonial_1.jpeg" alt="Client testimonial" />
                       </div>
                     </div>
                   </div>
@@ -424,7 +446,7 @@ const Home = () => {
                   <div className="slider-nav_item">
                     <div className="cs-rotate_img">
                       <div className="cs-rotate_img_in">
-                        <img src="/assets/img/testimonial_2.jpeg" alt="Nav Image" />
+                        <img src="/assets/img/testimonial_2.jpeg" alt="Client testimonial" />
                       </div>
                     </div>
                   </div>
@@ -433,7 +455,7 @@ const Home = () => {
                   <div className="slider-nav_item">
                     <div className="cs-rotate_img">
                       <div className="cs-rotate_img_in">
-                        <img src="/assets/img/testimonial_3.jpeg" alt="Nav Image" />
+                        <img src="/assets/img/testimonial_3.jpeg" alt="Client testimonial" />
                       </div>
                     </div>
                   </div>

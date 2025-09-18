@@ -53,7 +53,7 @@ const Header = () => {
           <div className="cs-main_header_in">
             <div className="cs-main_header_left">
               <Link className="cs-site_branding" to="/">
-                <img src="/assets/img/logo.svg" alt="Logo" />
+                <img src="/assets/img/logo.png" alt="Logo" />
               </Link>
             </div>
             <div className="cs-main_header_center">
@@ -106,7 +106,7 @@ const Header = () => {
         <div className="cs-side_header_in">
           <div className="cs-side_header_shape"></div>
           <Link className="cs-site_branding" to="/">
-            <img src="/assets/img/footer_logo.svg" alt="Logo" />
+            <img src="/assets/img/footer_logo.png" alt="Logo" />
           </Link>
           <div className="cs-side_header_box">
             <h2 className="cs-side_header_heading">Do you have a project in your <br /> mind? Keep connect us.</h2>

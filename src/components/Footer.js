@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="col-lg-3 col-sm-6">
               <div className="cs-footer_item">
                 <div className="cs-text_widget">
-                  <img src="/assets/img/footer_logo.svg" alt="Logo" />
+                  <img src="/assets/img/logo.png" alt="Logo" />
                   <p>Welcome to arino sed ut perspiciae omunde omnis iste natus error sitort voluptatem accusantium.</p>
                 </div>
                 <div className="cs-social_btns cs-style1">

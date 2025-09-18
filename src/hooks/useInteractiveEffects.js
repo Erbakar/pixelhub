@@ -199,6 +199,39 @@ const useInteractiveEffects = () => {
       });
     };
 
+    // Isotope Portfolio Filter
+    const initIsotopeFilter = () => {
+      const filterButtons = document.querySelectorAll('.cs-isotop_filter [data-filter]');
+      const isotopeContainer = document.querySelector('.cs-isotop');
+      
+      if (filterButtons.length && isotopeContainer) {
+        filterButtons.forEach((button) => {
+          button.addEventListener('click', () => {
+            const filterValue = button.getAttribute('data-filter');
+            const allItems = isotopeContainer.querySelectorAll('.cs-isotop_item');
+            
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.parentElement.classList.remove('active'));
+            // Add active class to clicked button
+            button.parentElement.classList.add('active');
+            
+            // Show/hide items based on filter
+            allItems.forEach((item) => {
+              if (filterValue === '*') {
+                item.style.display = 'block';
+              } else {
+                if (item.classList.contains(filterValue.replace('.', ''))) {
+                  item.style.display = 'block';
+                } else {
+                  item.style.display = 'none';
+                }
+              }
+            });
+          });
+        });
+      }
+    };
+
     // Initialize all interactive effects
     initTabs();
     initAccordion();
@@ -206,6 +239,7 @@ const useInteractiveEffects = () => {
     initHobbleEffect();
     initHoverTab();
     initPortfolioEffects();
+    initIsotopeFilter();
 
   }, []);
 };

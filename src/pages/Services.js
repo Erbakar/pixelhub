@@ -8,7 +8,7 @@ const Services = () => {
           <div className="cs-page_heading_in">
             <h1 className="cs-page_title cs-font_50 cs-white_color">Services</h1>
             <ol className="breadcrumb text-uppercase">
-              <li className="breadcrumb-item"><a href="/">Home</a></li>
+              <li className="breadcrumb-item"><a href="/" rel="noopener">Home</a></li>
               <li className="breadcrumb-item active">Services</li>
             </ol>
           </div>
@@ -139,6 +139,222 @@ const Services = () => {
                 <div className="cs-iconbox_subtitle">We provide digital experience services to startups and small businesses looking to make an impact.</div>
               </div>
               <div className="cs-height_30 cs-height_lg_30"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="cs-height_145 cs-height_lg_80"></div>
+
+      {/* How We Work Section */}
+      <section>
+        <div className="container">
+          <div className="cs-section_heading cs-style1 text-center">
+            <h3 className="cs-section_subtitle">Our Process</h3>
+            <h2 className="cs-section_title">How We Work</h2>
+            <div className="cs-height_30 cs-height_lg_20"></div>
+            <p className="cs-m0">
+              We follow a proven process to deliver exceptional results for our clients. Our systematic approach ensures quality and efficiency at every step.
+            </p>
+          </div>
+          <div className="cs-height_70 cs-height_lg_50"></div>
+          <div className="row">
+            <div className="col-lg-3 col-sm-6">
+              <div className="cs-iconbox cs-style7 text-center">
+                <div className="cs-iconbox_icon cs-center">
+                  <h3>01</h3>
+                </div>
+                <h2 className="cs-iconbox_title">Discovery</h2>
+                <div className="cs-iconbox_subtitle">We start by understanding your business goals, target audience, and project requirements through detailed consultation.</div>
+              </div>
+              <div className="cs-height_30 cs-height_lg_30"></div>
+            </div>
+            <div className="col-lg-3 col-sm-6">
+              <div className="cs-iconbox cs-style7 text-center">
+                <div className="cs-iconbox_icon cs-center">
+                  <h3>02</h3>
+                </div>
+                <h2 className="cs-iconbox_title">Planning</h2>
+                <div className="cs-iconbox_subtitle">We create a comprehensive strategy and project roadmap with clear milestones and deliverables.</div>
+              </div>
+              <div className="cs-height_30 cs-height_lg_30"></div>
+            </div>
+            <div className="col-lg-3 col-sm-6">
+              <div className="cs-iconbox cs-style7 text-center">
+                <div className="cs-iconbox_icon cs-center">
+                  <h3>03</h3>
+                </div>
+                <h2 className="cs-iconbox_title">Execution</h2>
+                <div className="cs-iconbox_subtitle">Our expert team brings your vision to life with cutting-edge design and development techniques.</div>
+              </div>
+              <div className="cs-height_30 cs-height_lg_30"></div>
+            </div>
+            <div className="col-lg-3 col-sm-6">
+              <div className="cs-iconbox cs-style7 text-center">
+                <div className="cs-iconbox_icon cs-center">
+                  <h3>04</h3>
+                </div>
+                <h2 className="cs-iconbox_title">Delivery</h2>
+                <div className="cs-iconbox_subtitle">We thoroughly test and launch your project, providing ongoing support and maintenance as needed.</div>
+              </div>
+              <div className="cs-height_30 cs-height_lg_30"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="cs-height_145 cs-height_lg_80"></div>
+
+      {/* Why Choose Us Section */}
+      <section className="cs-gray_bg">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-5 col-lg-6">
+              <div className="cs-section_heading cs-style1">
+                <h3 className="cs-section_subtitle">Why Choose Us</h3>
+                <h2 className="cs-section_title">We are committed to providing our customers with exceptional service.</h2>
+                <div className="cs-height_30 cs-height_lg_20"></div>
+                <p className="cs-m0">
+                  With years of experience and a proven track record, we deliver innovative solutions that drive business growth and exceed expectations.
+                </p>
+              </div>
+              <div className="cs-height_45 cs-height_lg_30"></div>
+            </div>
+            <div className="col-lg-7 offset-xl-1">
+              <div className="row">
+                <div className="col-lg-6">
+                  <div className="cs-iconbox cs-style6">
+                    <div className="cs-iconbox_icon cs-accent_bg">
+                      <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29.5 14.5C29.5 22.5 23 28.5 15 28.5C7 28.5 0.5 22.5 0.5 14.5C0.5 6.5 7 0.5 15 0.5C23 0.5 29.5 6.5 29.5 14.5Z" stroke="white"/>
+                        <path d="M9.5 14.5L13.5 18.5L20.5 10.5" stroke="white" strokeWidth="2"/>
+                      </svg>
+                    </div>
+                    <div className="cs-iconbox_right">
+                      <h2 className="cs-iconbox_title cs-font_18 cs-font_18">Expert Team</h2>
+                      <div className="cs-iconbox_subtitle">Our skilled professionals bring years of industry experience to every project.</div>
+                    </div>
+                  </div>
+                  <div className="cs-height_30 cs-height_lg_30"></div>
+                  <div className="cs-iconbox cs-style6">
+                    <div className="cs-iconbox_icon cs-accent_bg">
+                      <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 0.5L19 11.5L30 13L21 21.5L23.5 28.5L15 24L6.5 28.5L9 21.5L0 13L11 11.5L15 0.5Z" stroke="white"/>
+                      </svg>
+                    </div>
+                    <div className="cs-iconbox_right">
+                      <h2 className="cs-iconbox_title cs-font_18 cs-font_18">Quality Assurance</h2>
+                      <div className="cs-iconbox_subtitle">We maintain the highest standards of quality in every deliverable.</div>
+                    </div>
+                  </div>
+                  <div className="cs-height_30 cs-height_lg_30"></div>
+                </div>
+                <div className="col-lg-6">
+                  <div className="cs-iconbox cs-style6">
+                    <div className="cs-iconbox_icon cs-accent_bg">
+                      <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 28.5C22.5 28.5 28.5 22.5 28.5 15C28.5 7.5 22.5 1.5 15 1.5C7.5 1.5 1.5 7.5 1.5 15C1.5 22.5 7.5 28.5 15 28.5Z" stroke="white"/>
+                        <path d="M15 7.5V15L21 21" stroke="white" strokeWidth="2"/>
+                      </svg>
+                    </div>
+                    <div className="cs-iconbox_right">
+                      <h2 className="cs-iconbox_title cs-font_18 cs-font_18">Timely Delivery</h2>
+                      <div className="cs-iconbox_subtitle">We respect deadlines and deliver projects on time, every time.</div>
+                    </div>
+                  </div>
+                  <div className="cs-height_30 cs-height_lg_30"></div>
+                  <div className="cs-iconbox cs-style6">
+                    <div className="cs-iconbox_icon cs-accent_bg">
+                      <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 1.5C22.5 1.5 28.5 7.5 28.5 15C28.5 22.5 22.5 28.5 15 28.5C7.5 28.5 1.5 22.5 1.5 15C1.5 7.5 7.5 1.5 15 1.5Z" stroke="white"/>
+                        <path d="M9.5 15L13.5 19L20.5 11" stroke="white" strokeWidth="2"/>
+                      </svg>
+                    </div>
+                    <div className="cs-iconbox_right">
+                      <h2 className="cs-iconbox_title cs-font_18 cs-font_18">24/7 Support</h2>
+                      <div className="cs-iconbox_subtitle">Our dedicated support team is available round the clock for assistance.</div>
+                    </div>
+                  </div>
+                  <div className="cs-height_30 cs-height_lg_30"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="cs-height_145 cs-height_lg_80"></div>
+
+      {/* FAQ Section */}
+      <section>
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-5 col-lg-6">
+              <div className="cs-section_heading cs-style1">
+                <h3 className="cs-section_subtitle">Have Any Questions?</h3>
+                <h2 className="cs-section_title">Frequently Asked Questions</h2>
+                <div className="cs-height_30 cs-height_lg_20"></div>
+                <p className="cs-m0">
+                  Find answers to common questions about our services. Can't find what you're looking for? Contact us directly.
+                </p>
+              </div>
+              <div className="cs-height_45 cs-height_lg_30"></div>
+            </div>
+            <div className="col-lg-7 offset-xl-1">
+              <div className="cs-accordians cs-style1">
+                <div className="cs-accordian active">
+                  <div className="cs-accordian_head">
+                    <h2 className="cs-accordian_title">What services do you offer?</h2>
+                    <span className="cs-accordian_toggle cs-accent_color">
+                      <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0L7.5 7.5L15 0H0Z" fill="currentColor" />
+                      </svg>
+                    </span>
+                  </div>
+                  <div className="cs-accordian_body">
+                    We offer a comprehensive range of digital services including UI/UX design, web development, mobile applications, digital marketing, brand identity, SEO optimization, content writing, and social media marketing.
+                  </div>
+                </div>
+                <div className="cs-accordian">
+                  <div className="cs-accordian_head">
+                    <h2 className="cs-accordian_title">How long does a typical project take?</h2>
+                    <span className="cs-accordian_toggle cs-accent_color">
+                      <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0L7.5 7.5L15 0H0Z" fill="currentColor" />
+                      </svg>
+                    </span>
+                  </div>
+                  <div className="cs-accordian_body">
+                    Project timelines vary depending on scope and complexity. A simple website typically takes 2-4 weeks, while complex applications can take 2-6 months. We provide detailed timelines during the planning phase.
+                  </div>
+                </div>
+                <div className="cs-accordian">
+                  <div className="cs-accordian_head">
+                    <h2 className="cs-accordian_title">Do you provide ongoing support?</h2>
+                    <span className="cs-accordian_toggle cs-accent_color">
+                      <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0L7.5 7.5L15 0H0Z" fill="currentColor" />
+                      </svg>
+                    </span>
+                  </div>
+                  <div className="cs-accordian_body">
+                    Yes, we offer comprehensive maintenance and support packages. This includes regular updates, security monitoring, performance optimization, and technical support to ensure your project continues to perform optimally.
+                  </div>
+                </div>
+                <div className="cs-accordian">
+                  <div className="cs-accordian_head">
+                    <h2 className="cs-accordian_title">What is your pricing structure?</h2>
+                    <span className="cs-accordian_toggle cs-accent_color">
+                      <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0L7.5 7.5L15 0H0Z" fill="currentColor" />
+                      </svg>
+                    </span>
+                  </div>
+                  <div className="cs-accordian_body">
+                    Our pricing is project-based and depends on the scope, complexity, and timeline. We provide detailed quotes after understanding your requirements. We also offer flexible payment plans to accommodate different budgets.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

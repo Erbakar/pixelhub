@@ -8,7 +8,7 @@ const Blog = () => {
           <div className="cs-page_heading_in">
             <h1 className="cs-page_title cs-font_50 cs-white_color">Blog</h1>
             <ol className="breadcrumb text-uppercase">
-              <li className="breadcrumb-item"><a href="/">Home</a></li>
+              <li className="breadcrumb-item"><a href="/" rel="noopener">Home</a></li>
               <li className="breadcrumb-item active">Blog</li>
             </ol>
           </div>
@@ -36,7 +36,7 @@ const Blog = () => {
                   <h2 className="cs-post_title">
                     <a href="/blog/post-1">Make more productive work flow in few steps</a>
                   </h2>
-                  <div className="cs-post_subtitle">
+                  <div className="cs-post_sub_title">
                     We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences, and print materials. Install any demo or template with a single click.
                   </div>
                   <div className="cs-post_footer">
@@ -66,7 +66,7 @@ const Blog = () => {
                   <h2 className="cs-post_title">
                     <a href="/blog/post-2">How to make website WCAG compliant?</a>
                   </h2>
-                  <div className="cs-post_subtitle">
+                  <div className="cs-post_sub_title">
                     We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences, and print materials. Install any demo or template with a single click.
                   </div>
                   <div className="cs-post_footer">
@@ -96,7 +96,7 @@ const Blog = () => {
                   <h2 className="cs-post_title">
                     <a href="/blog/post-3">How to work with prototype design with adobe xd featuring tools</a>
                   </h2>
-                  <div className="cs-post_subtitle">
+                  <div className="cs-post_sub_title">
                     We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences, and print materials. Install any demo or template with a single click.
                   </div>
                   <div className="cs-post_footer">
@@ -107,6 +107,83 @@ const Blog = () => {
                       </svg>
                     </a>
                   </div>
+                </div>
+              </div>
+              <div className="cs-height_65 cs-height_lg_40"></div>
+              
+              <div className="cs-post cs-style2">
+                <a href="/blog/post-4" className="cs-post_thumb">
+                  <img src="/assets/img/post_4.jpeg" alt="Post" className="w-100 cs-radius_15" />
+                </a>
+                <div className="cs-post_info">
+                  <div className="cs-post_meta cs-style1 cs-ternary_color cs-semi_bold cs-primary_font">
+                    <span className="cs-posted_by">01 Mar 2022</span>
+                    <a href="/blog" className="cs-post_avatar">
+                      <img src="/assets/img/avatar_1.png" alt="Avatar" />
+                      <span>Arino</span>
+                    </a>
+                  </div>
+                  <h2 className="cs-post_title">
+                    <a href="/blog/post-4">The future of web development: trends to watch</a>
+                  </h2>
+                  <div className="cs-post_subtitle">
+                    Explore the latest trends shaping the future of web development, from AI integration to progressive web apps and beyond.
+                  </div>
+                  <div className="cs-post_footer">
+                    <a href="/blog/post-4" className="cs-text_btn">
+                      <span>Continue Reading</span>
+                      <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z" fill="currentColor" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="cs-height_65 cs-height_lg_40"></div>
+              
+              <div className="cs-post cs-style2">
+                <a href="/blog/post-5" className="cs-post_thumb">
+                  <img src="/assets/img/post_5.jpeg" alt="Post" className="w-100 cs-radius_15" />
+                </a>
+                <div className="cs-post_info">
+                  <div className="cs-post_meta cs-style1 cs-ternary_color cs-semi_bold cs-primary_font">
+                    <span className="cs-posted_by">28 Feb 2022</span>
+                    <a href="/blog" className="cs-post_avatar">
+                      <img src="/assets/img/avatar_2.png" alt="Avatar" />
+                      <span>Arino</span>
+                    </a>
+                  </div>
+                  <h2 className="cs-post_title">
+                    <a href="/blog/post-5">Building responsive layouts with CSS Grid</a>
+                  </h2>
+                  <div className="cs-post_subtitle">
+                    Learn how to create flexible, responsive layouts using CSS Grid. Master the fundamentals and advanced techniques.
+                  </div>
+                  <div className="cs-post_footer">
+                    <a href="/blog/post-5" className="cs-text_btn">
+                      <span>Continue Reading</span>
+                      <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z" fill="currentColor" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="cs-height_65 cs-height_lg_40"></div>
+              
+              {/* Pagination */}
+              <div className="cs-pagination_box">
+                <div className="cs-pagination_item active">
+                  <span>1</span>
+                </div>
+                <div className="cs-pagination_item">
+                  <a href="/blog?page=2">2</a>
+                </div>
+                <div className="cs-pagination_item">
+                  <a href="/blog?page=3">3</a>
+                </div>
+                <div className="cs-pagination_item">
+                  <a href="/blog?page=2">Next</a>
                 </div>
               </div>
             </div>
