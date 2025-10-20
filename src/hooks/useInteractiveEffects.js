@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const useInteractiveEffects = () => {
+const useInteractiveEffects = (locationPath = null) => {
   useEffect(() => {
     // Tabs functionality
     const initTabs = () => {
@@ -241,7 +241,7 @@ const useInteractiveEffects = () => {
     initPortfolioEffects();
     initIsotopeFilter();
 
-  }, []);
+  }, [locationPath]);
 };
 
 export default useInteractiveEffects;

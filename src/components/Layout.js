@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import useScrollEffects from '../hooks/useScrollEffects';
@@ -6,9 +7,12 @@ import useInteractiveEffects from '../hooks/useInteractiveEffects';
 import useCounterAnimation from '../hooks/useCounterAnimation';
 
 const Layout = ({ children }) => {
-  useScrollEffects();
-  useInteractiveEffects();
-  useCounterAnimation();
+  const location = useLocation();
+  
+  // Hook'ları location değişikliklerinde yeniden başlatmak için key olarak location.pathname kullanıyoruz
+  useScrollEffects(location.pathname);
+  useInteractiveEffects(location.pathname);
+  useCounterAnimation(location.pathname);
 
   return (
     <div>

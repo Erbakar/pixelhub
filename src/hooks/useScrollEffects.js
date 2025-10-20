@@ -1,13 +1,33 @@
 import { useEffect } from 'react';
 
-const useScrollEffects = () => {
+const useScrollEffects = (locationPath = null) => {
   useEffect(() => {
+    // Önceki route'dan kalan slider'ları temizle
+    const cleanupPreviousSliders = () => {
+      const $ = window.$;
+      if ($) {
+        $('.cs-slider_wrapper').each(function() {
+          if ($(this).hasClass('slick-initialized')) {
+            $(this).slick('unslick');
+          }
+        });
+        $('.slider-for, .slider-nav').each(function() {
+          if ($(this).hasClass('slick-initialized')) {
+            $(this).slick('unslick');
+          }
+        });
+      }
+    };
+
     // jQuery'nin yüklenmesini bekle
     const initEffects = () => {
       if (typeof window.$ === 'undefined') {
         setTimeout(initEffects, 100);
         return;
       }
+      
+      // Önce temizliği yap
+      cleanupPreviousSliders();
     // Preloader
     const preloader = () => {
       const preloaderIn = document.querySelector('.cs-preloader_in');
@@ -19,13 +39,15 @@ const useScrollEffects = () => {
       }
       
       if (preloaderEl) {
+        // Ana sayfa için daha hızlı preloader kapanma
+        const preloaderDelay = locationPath === '/' ? 50 : 150;
         setTimeout(() => {
           preloaderEl.style.opacity = '0';
           preloaderEl.style.transition = 'opacity 0.5s ease';
           setTimeout(() => {
             preloaderEl.style.display = 'none';
           }, 500);
-        }, 150);
+        }, preloaderDelay);
       }
     };
 
@@ -273,8 +295,9 @@ const useScrollEffects = () => {
       }
     };
 
-    // Slider'ları biraz gecikmeyle initialize et
-    setTimeout(initSliders, 1500);
+    // Slider'ları initialize et - ana sayfa için daha hızlı
+    const initDelay = locationPath === '/' ? 500 : 1500;
+    setTimeout(initSliders, initDelay);
     
     // Scroll up click handler
     const scrollUpBtn = document.querySelector('.cs-scrollup');
@@ -318,7 +341,7 @@ const useScrollEffects = () => {
 
     // jQuery yüklenmesini bekle ve init et
     initEffects();
-  }, []);
+  }, [locationPath]);
 };
 
 export default useScrollEffects;

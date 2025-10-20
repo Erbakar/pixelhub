@@ -1,7 +1,19 @@
 import { useEffect } from 'react';
 
-const useCounterAnimation = () => {
+const useCounterAnimation = (locationPath = null) => {
   useEffect(() => {
+    // Önceki sayfadan kalan counter animasyonlarını sıfırla
+    const resetCounters = () => {
+      const counters = document.querySelectorAll('.odometer');
+      counters.forEach(counter => {
+        counter.classList.remove('animated');
+        const target = counter.getAttribute('data-count-to');
+        if (target) {
+          counter.textContent = '0';
+        }
+      });
+    };
+
     const animateCounters = () => {
       const counters = document.querySelectorAll('.odometer');
       
@@ -40,11 +52,14 @@ const useCounterAnimation = () => {
       return () => observer.disconnect();
     };
 
+    // Önce counter'ları sıfırla, sonra animasyonu başlat
+    resetCounters();
+    
     // DOM yüklendikten sonra başlat
     const timeout = setTimeout(animateCounters, 1000);
     
     return () => clearTimeout(timeout);
-  }, []);
+  }, [locationPath]);
 };
 
 export default useCounterAnimation;
