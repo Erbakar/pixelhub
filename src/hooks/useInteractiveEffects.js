@@ -205,6 +205,42 @@ const useInteractiveEffects = (locationPath = null) => {
       const isotopeContainer = document.querySelector('.cs-isotop');
       
       if (filterButtons.length && isotopeContainer) {
+        // Calculate and set fixed container height once
+        let fixedContainerHeight = null;
+        
+        const setFixedContainerHeight = () => {
+          if (fixedContainerHeight === null) {
+            // First time - calculate maximum possible height
+            const allItems = isotopeContainer.querySelectorAll('.cs-isotop_item');
+            let maxHeight = 0;
+            
+            allItems.forEach((item) => {
+              // Temporarily show all items to measure
+              const originalDisplay = item.style.display;
+              item.style.display = 'block';
+              item.style.float = 'left';
+              
+              // eslint-disable-next-line no-unused-expressions
+              isotopeContainer.offsetHeight;
+              
+              const rect = item.getBoundingClientRect();
+              const containerRect = isotopeContainer.getBoundingClientRect();
+              const itemBottom = rect.bottom - containerRect.top;
+              maxHeight = Math.max(maxHeight, itemBottom);
+              
+              // Restore original state
+              item.style.display = originalDisplay;
+            });
+            
+            fixedContainerHeight = maxHeight + 150; // Add padding
+            isotopeContainer.style.height = `${fixedContainerHeight}px`;
+            isotopeContainer.style.minHeight = `${fixedContainerHeight}px`;
+          }
+        };
+        
+        // Set fixed height on initialization
+        setTimeout(setFixedContainerHeight, 100);
+        
         filterButtons.forEach((button) => {
           button.addEventListener('click', () => {
             const filterValue = button.getAttribute('data-filter');
@@ -217,17 +253,89 @@ const useInteractiveEffects = (locationPath = null) => {
             
             // Show/hide items based on filter
             allItems.forEach((item) => {
+              // Remove any existing filtered class first
+              item.classList.remove('cs-isotope-filtered');
+              
               if (filterValue === '*') {
+                // Show all items
                 item.style.display = 'block';
+                item.style.float = 'left';
               } else {
-                if (item.classList.contains(filterValue.replace('.', ''))) {
+                const filterClass = filterValue.replace('.', '');
+                if (item.classList.contains(filterClass)) {
+                  // Show matching items
                   item.style.display = 'block';
+                  item.style.float = 'left';
                 } else {
+                  // Hide non-matching items
                   item.style.display = 'none';
+                  item.style.float = '';
                 }
               }
             });
+
+            // Fix container height to prevent CTA jumping
+            if (fixedContainerHeight) {
+              isotopeContainer.style.height = `${fixedContainerHeight}px`;
+              isotopeContainer.style.minHeight = `${fixedContainerHeight}px`;
+            } else {
+              // Check if height was set by Portfolio.js
+              const storedHeight = isotopeContainer.getAttribute('data-fixed-height');
+              if (storedHeight) {
+                isotopeContainer.style.height = `${storedHeight}px`;
+                isotopeContainer.style.minHeight = `${storedHeight}px`;
+              } else {
+                // Fallback if height not calculated yet
+                setTimeout(setFixedContainerHeight, 50);
+              }
+            }
           });
+        });
+      }
+    };
+
+    // Portfolio layout'ı başlatmak için ek fonksiyon
+    const initPortfolioLayout = () => {
+      const isotopeContainer = document.querySelector('.cs-isotop');
+      const allItems = document.querySelectorAll('.cs-isotop_item');
+      
+      if (isotopeContainer && allItems.length) {
+        // Tüm itemları temizle ve görünür yap
+        allItems.forEach((item) => {
+          item.style.display = 'block';
+          item.style.float = 'left';
+          item.classList.remove('cs-isotope-filtered');
+        });
+
+        // Layout'ı yeniden hesapla
+        requestAnimationFrame(() => {
+          // Force container height recalculation
+          isotopeContainer.style.height = 'auto';
+          isotopeContainer.style.minHeight = 'auto';
+          // eslint-disable-next-line no-unused-expressions
+          isotopeContainer.offsetHeight;
+          
+          // Calculate proper container height
+          setTimeout(() => {
+            const visibleItems = Array.from(allItems).filter(item => {
+              const style = window.getComputedStyle(item);
+              return style.display !== 'none' && item.offsetHeight > 0;
+            });
+            
+            if (visibleItems.length > 0) {
+              let maxBottom = 0;
+              visibleItems.forEach(item => {
+                const rect = item.getBoundingClientRect();
+                const containerRect = isotopeContainer.getBoundingClientRect();
+                const itemBottom = rect.bottom - containerRect.top;
+                maxBottom = Math.max(maxBottom, itemBottom);
+              });
+              
+              const calculatedHeight = maxBottom + 100;
+              isotopeContainer.style.minHeight = `${calculatedHeight}px`;
+              isotopeContainer.style.height = `${calculatedHeight}px`;
+            }
+          }, 150);
         });
       }
     };
@@ -240,6 +348,11 @@ const useInteractiveEffects = (locationPath = null) => {
     initHoverTab();
     initPortfolioEffects();
     initIsotopeFilter();
+    
+    // Portfolio sayfasında layout'ı başlat
+    if (locationPath === '/portfolio') {
+      setTimeout(initPortfolioLayout, 150);
+    }
 
   }, [locationPath]);
 };

@@ -1,9 +1,82 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import CTA from '../components/CTA';
 
 const Portfolio = () => {
+  // Portfolio sayfasına özel layout düzeltme
+  useEffect(() => {
+    const initializePortfolioLayout = () => {
+      const isotopeContainer = document.querySelector('.cs-isotop');
+      const allItems = document.querySelectorAll('.cs-isotop_item');
+      
+      if (isotopeContainer && allItems.length) {
+        // Tüm itemları görünür yap ve layout'ı sıfırla
+        allItems.forEach((item) => {
+          item.style.display = 'block';
+          item.style.opacity = '1';
+          item.style.visibility = 'visible';
+          item.style.transform = '';
+          item.style.position = '';
+          item.style.pointerEvents = '';
+          item.style.float = 'left';
+          item.classList.remove('cs-isotope-filtered');
+        });
+
+        // Layout'ı yeniden hesapla ve sabit yükseklik belirle
+        requestAnimationFrame(() => {
+          // Filter butonlarını doğru state'e getir
+          const filterButtons = document.querySelectorAll('.cs-isotop_filter [data-filter]');
+          filterButtons.forEach(btn => {
+            btn.parentElement.classList.remove('active');
+          });
+          
+          // "All" butonunu aktif yap
+          const allButton = document.querySelector('.cs-isotop_filter [data-filter="*"]');
+          if (allButton && allButton.parentElement) {
+            allButton.parentElement.classList.add('active');
+          }
+          
+          // Calculate maximum possible height (when all items are visible)
+          setTimeout(() => {
+            let maxHeight = 0;
+            allItems.forEach((item) => {
+              // Force all items visible for measurement
+              item.style.display = 'block';
+              item.style.float = 'left';
+            });
+            
+            // eslint-disable-next-line no-unused-expressions
+            isotopeContainer.offsetHeight;
+            
+            // Calculate maximum height
+            allItems.forEach((item) => {
+              const rect = item.getBoundingClientRect();
+              const containerRect = isotopeContainer.getBoundingClientRect();
+              const itemBottom = rect.bottom - containerRect.top;
+              maxHeight = Math.max(maxHeight, itemBottom);
+            });
+            
+            // Set fixed height to prevent CTA jumping
+            const fixedHeight = maxHeight + 150;
+            isotopeContainer.style.height = `${fixedHeight}px`;
+            isotopeContainer.style.minHeight = `${fixedHeight}px`;
+            
+            // Store fixed height for later use
+            isotopeContainer.setAttribute('data-fixed-height', fixedHeight);
+            
+          }, 200);
+        });
+      }
+    };
+
+    // Sayfa yüklendiğinde layout'ı başlat
+    const timer = setTimeout(initializePortfolioLayout, 100);
+    
+    // Cleanup
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div>
       <SEO 
@@ -60,9 +133,9 @@ const Portfolio = () => {
           </div>
           <div className="cs-height_50 cs-height_lg_30"></div>
           
-          <div className="cs-isotop cs-style1 cs-isotop_col_3 cs-has_gutter_24">
+          <div className="cs-isotop cs-style1 cs-isotop_col_3 cs-has_gutter_24 portfolio-height" >
             <div className="cs-grid_sizer"></div>
-            <div className="cs-isotop_item ui_ux_design">
+            <div className="cs-isotop_item ui_ux_design"> 
               <div className="cs-portfolio cs-style1 cs-type1">
                 <div className="cs-portfolio_hover"></div>
                 <div className="cs-portfolio_bg cs-bg" data-src="/assets/img/portfolio_1.jpeg"></div>

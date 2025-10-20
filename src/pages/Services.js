@@ -54,17 +54,56 @@ const Services = () => {
       </div>
       
       <div className="cs-height_150 cs-height_lg_80"></div>
+      <section>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-5 col-xl-4 offset-xl-1">
+              <div className="cs-image_layer cs-style1">
+                <div className="cs-image_layer_in">
+                  <img src="/assets/img/service_img_1.png" alt="About" className="w-100 cs-radius_15" />
+                  <div className="cs-image_layer_overlay cs-accent_bg"></div>
+                  <div className="cs-image_layer_content">
+                    <div className="cs-percentage cs-accent_color">
+                      <div className="cs-percentage_in">
+                        <h2>25</h2>
+                        <span className="cs-percentage_text">Years Of Experience</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="cs-height_25 cs-height_lg_25"></div>
+            </div>
+            <div className="col-lg-7 col-xl-6 offset-xl-1">
+              <div className="cs-section_heading cs-style1">
+                <h3 className="cs-section_subtitle">What Can We Do</h3>
+                <h2 className="cs-section_title">Services we can help you with</h2>
+                <div className="cs-height_30 cs-height_lg_20"></div>
+                <p className="cs-m0">
+                We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences, and print materials.
+                </p>
+                <div className="cs-height_15 cs-height_lg_15"></div>
+                <p className="cs-m0">
+                  We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences, and print materials.
+                </p>
+                <div className="cs-height_25 cs-height_lg_25"></div>
+                <div className="cs-separator cs-accent_bg"></div>
+                <div className="cs-height_25 cs-height_lg_25"></div>
+                <Link to="/contact" className="cs-text_btn">
+                  <span>Send Us A Message</span>
+                  <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z" fill="currentColor" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       
       <section>
         <div className="container">
-          <div className="cs-section_heading cs-style1 text-center">
-            <h3 className="cs-section_subtitle">What Can We Do</h3>
-            <h2 className="cs-section_title">Services we can help you with</h2>
-            <div className="cs-height_30 cs-height_lg_20"></div>
-            <p className="cs-m0">
-              We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences, and print materials.
-            </p>
-          </div>
+     
           <div className="cs-height_70 cs-height_lg_50"></div>
           <div className="row">
             <div className="col-xl-3 col-lg-4 col-md-6">
@@ -247,7 +286,7 @@ const Services = () => {
       <section className="cs-gray_bg">
         <div className="container">
           <div className="row">
-            <div className="col-xl-5 col-lg-6">
+        
               <div className="cs-section_heading cs-style1">
                 <h3 className="cs-section_subtitle">Why Choose Us</h3>
                 <h2 className="cs-section_title">We are committed to providing our customers with exceptional service.</h2>
@@ -257,66 +296,66 @@ const Services = () => {
                 </p>
               </div>
               <div className="cs-height_45 cs-height_lg_30"></div>
-            </div>
-            <div className="col-lg-7 offset-xl-1">
+       
+           
               <div className="row">
                 <div className="col-lg-6">
-                  <div className="cs-iconbox cs-style6">
-                    <div className="cs-iconbox_icon cs-accent_bg">
+                  <div className="cs-iconbox cs-style6" style={{minHeight: '320px'}}>
+                    <div className="cs-iconbox_icon cs-accent_bg" style={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '20px'}}>
                       <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M29.5 14.5C29.5 22.5 23 28.5 15 28.5C7 28.5 0.5 22.5 0.5 14.5C0.5 6.5 7 0.5 15 0.5C23 0.5 29.5 6.5 29.5 14.5Z" stroke="white"/>
                         <path d="M9.5 14.5L13.5 18.5L20.5 10.5" stroke="white" strokeWidth="2"/>
                       </svg>
+                      <h2 className="cs-iconbox_title cs-font_18 cs-font_18" style={{margin: 0}}>Expert Team</h2>
                     </div>
                     <div className="cs-iconbox_right">
-                      <h2 className="cs-iconbox_title cs-font_18 cs-font_18">Expert Team</h2>
-                      <div className="cs-iconbox_subtitle">Our skilled professionals bring years of industry experience to every project.</div>
+                      <div className="cs-iconbox_subtitle">Our expert team of digital professionals brings years of industry experience and specialized expertise to every project. Our talented developers, designers, and digital marketing specialists work collaboratively to deliver innovative solutions that exceed expectations. With deep knowledge in modern web technologies, responsive design principles, and cutting-edge development frameworks, we ensure your digital presence stands out in today's competitive market. Our team stays updated with the latest industry trends and best practices to provide you with future-ready solutions.</div>
                     </div>
                   </div>
                   <div className="cs-height_30 cs-height_lg_30"></div>
                   <div className="cs-iconbox cs-style6">
-                    <div className="cs-iconbox_icon cs-accent_bg">
+                    <div className="cs-iconbox_icon cs-accent_bg" style={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '20px'}}>
                       <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15 0.5L19 11.5L30 13L21 21.5L23.5 28.5L15 24L6.5 28.5L9 21.5L0 13L11 11.5L15 0.5Z" stroke="white"/>
                       </svg>
+                      <h2 className="cs-iconbox_title cs-font_18 cs-font_18" style={{margin: 0}}>Quality Assurance</h2>
                     </div>
                     <div className="cs-iconbox_right">
-                      <h2 className="cs-iconbox_title cs-font_18 cs-font_18">Quality Assurance</h2>
-                      <div className="cs-iconbox_subtitle">We maintain the highest standards of quality in every deliverable.</div>
+                      <div className="cs-iconbox_subtitle">Our comprehensive quality assurance process ensures every deliverable meets the highest industry standards and exceeds client expectations. We implement rigorous testing protocols, code review procedures, and performance optimization techniques across all projects. Our quality control team conducts thorough cross-browser compatibility testing, accessibility audits, and security assessments to guarantee flawless functionality. We follow international web development standards and best practices, ensuring your digital solutions are robust, scalable, and maintainable for long-term success in the digital landscape.</div>
                     </div>
                   </div>
                   <div className="cs-height_30 cs-height_lg_30"></div>
                 </div>
                 <div className="col-lg-6">
                   <div className="cs-iconbox cs-style6">
-                    <div className="cs-iconbox_icon cs-accent_bg">
+                    <div className="cs-iconbox_icon cs-accent_bg" style={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '20px'}}>
                       <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15 28.5C22.5 28.5 28.5 22.5 28.5 15C28.5 7.5 22.5 1.5 15 1.5C7.5 1.5 1.5 7.5 1.5 15C1.5 22.5 7.5 28.5 15 28.5Z" stroke="white"/>
                         <path d="M15 7.5V15L21 21" stroke="white" strokeWidth="2"/>
                       </svg>
+                      <h2 className="cs-iconbox_title cs-font_18 cs-font_18" style={{margin: 0}}>Timely Delivery</h2>
                     </div>
                     <div className="cs-iconbox_right">
-                      <h2 className="cs-iconbox_title cs-font_18 cs-font_18">Timely Delivery</h2>
-                      <div className="cs-iconbox_subtitle">We respect deadlines and deliver projects on time, every time.</div>
+                      <div className="cs-iconbox_subtitle">We understand the importance of timely project delivery in today's fast-paced digital world and maintain a proven track record of meeting strict deadlines without compromising quality. Our efficient project management methodology, agile development approach, and dedicated team coordination ensure smooth project execution from conception to launch. We utilize advanced project tracking tools and maintain transparent communication throughout the development lifecycle. Our commitment to punctual delivery helps businesses stay competitive and launch their digital initiatives when they matter most to their market positioning and business growth.</div>
                     </div>
                   </div>
                   <div className="cs-height_30 cs-height_lg_30"></div>
                   <div className="cs-iconbox cs-style6">
-                    <div className="cs-iconbox_icon cs-accent_bg">
+                    <div className="cs-iconbox_icon cs-accent_bg" style={{display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '20px'}}>
                       <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15 1.5C22.5 1.5 28.5 7.5 28.5 15C28.5 22.5 22.5 28.5 15 28.5C7.5 28.5 1.5 22.5 1.5 15C1.5 7.5 7.5 1.5 15 1.5Z" stroke="white"/>
                         <path d="M9.5 15L13.5 19L20.5 11" stroke="white" strokeWidth="2"/>
                       </svg>
+                      <h2 className="cs-iconbox_title cs-font_18 cs-font_18" style={{margin: 0}}>24/7 Support</h2>
                     </div>
                     <div className="cs-iconbox_right">
-                      <h2 className="cs-iconbox_title cs-font_18 cs-font_18">24/7 Support</h2>
-                      <div className="cs-iconbox_subtitle">Our dedicated support team is available round the clock for assistance.</div>
+                      <div className="cs-iconbox_subtitle">Our dedicated 24/7 customer support team provides comprehensive assistance and technical expertise whenever you need it, ensuring uninterrupted service and peace of mind for your digital initiatives. Our responsive support specialists are trained in resolving complex technical issues, providing maintenance guidance, and offering strategic consultation for ongoing projects. We maintain multiple communication channels including live chat, email, and phone support to address your concerns promptly. Our proactive monitoring systems and routine maintenance services help prevent issues before they impact your business operations, ensuring optimal performance and reliability of your digital assets.</div>
                     </div>
                   </div>
                   <div className="cs-height_30 cs-height_lg_30"></div>
                 </div>
               </div>
-            </div>
+           
           </div>
         </div>
       </section>
@@ -327,7 +366,7 @@ const Services = () => {
       <section>
         <div className="container">
           <div className="row">
-            <div className="col-xl-5 col-lg-6">
+          
               <div className="cs-section_heading cs-style1">
                 <h3 className="cs-section_subtitle">Have Any Questions?</h3>
                 <h2 className="cs-section_title">Frequently Asked Questions</h2>
@@ -337,8 +376,8 @@ const Services = () => {
                 </p>
               </div>
               <div className="cs-height_45 cs-height_lg_30"></div>
-            </div>
-            <div className="col-lg-7 offset-xl-1">
+         
+           
               <div className="cs-accordians cs-style1">
                 <div className="cs-accordian active">
                   <div className="cs-accordian_head">
@@ -393,7 +432,7 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            
           </div>
         </div>
       </section>

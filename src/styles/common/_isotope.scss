@@ -2,7 +2,45 @@
 9. Isotope
 ----------------------------------------------------------------*/
 .cs-isotop {
-  transition: all 0.4s ease;
+  transition: height 0.2s ease-out, min-height 0.2s ease-out;
+  overflow: hidden;
+  min-height: 1px; /* Ensure minimum height */
+  position: relative;
+  margin-bottom: 100px; /* Extra margin to prevent overlap */
+  
+  /* Clearfix for floated items */
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+  }
+  
+  /* Force proper height calculation */
+  &:before {
+    content: "";
+    display: block;
+    height: 1px;
+    margin-bottom: -1px;
+  }
+}
+
+.cs-isotop_item {
+  float: left;
+  box-sizing: border-box;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  
+  /* Ensure items maintain proper spacing when filtered */
+  &[style*="display: block"] {
+    display: block !important;
+    float: left !important;
+  }
+  
+  &[style*="display: none"] {
+    display: none !important;
+    float: none !important;
+  }
 }
 
 .cs-isotop.cs-has_gutter_24 {
