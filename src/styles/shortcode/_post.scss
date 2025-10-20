@@ -270,6 +270,119 @@
     }
   }
 }
+/* Post Navigation */
+.cs-post_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid #E4E4E4;
+  
+  .cs-post_nav_item {
+    flex: 1;
+    
+    &.cs-post_nav_left {
+      text-align: left;
+    }
+    
+    &.cs-post_nav_right {
+      text-align: right;
+    }
+  }
+  
+  .cs-post_nav_link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    
+    &:hover {
+      background-color: $primary;
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      
+      .cs-post_nav_icon {
+        transform: translateX(-3px);
+      }
+    }
+  }
+  
+  .cs-post_nav_text {
+    flex: 1;
+    
+    span {
+      display: block;
+      font-size: 14px;
+      color: $secondary;
+      margin-bottom: 5px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    h3 {
+      font-size: 18px;
+      margin: 0;
+      line-height: 1.4;
+      color: inherit;
+      font-weight: 600;
+    }
+  }
+  
+  .cs-post_nav_icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease;
+    
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  .cs-post_nav_right .cs-post_nav_link {
+    flex-direction: row-reverse;
+    
+    &:hover .cs-post_nav_icon {
+      transform: translateX(3px);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cs-post_nav {
+    flex-direction: column;
+    gap: 20px;
+    
+    .cs-post_nav_item {
+      width: 100%;
+      
+      &.cs-post_nav_left,
+      &.cs-post_nav_right {
+        text-align: center;
+      }
+    }
+    
+    .cs-post_nav_link {
+      padding: 15px;
+      
+      .cs-post_nav_text h3 {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 350px) {
   .cs-slider .cs-post.cs-style1 {
     max-width: 300px;

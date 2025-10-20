@@ -1,14 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 const About = () => {
   return (
     <div>
+      <SEO 
+        title="About Us - PixelHub Creative Digital Agency"
+        description="Learn about PixelHub's journey, our expert team, and our commitment to delivering exceptional digital solutions for businesses worldwide."
+        keywords="about pixelhub, creative agency team, digital agency, web design company, our story"
+        url="https://pixelhub.com/about"
+      />
       <div className="cs-page_heading cs-bg cs-center" data-src="/assets/img/about_hero_bg.jpeg">
         <div className="container">
           <div className="cs-page_heading_in">
             <h1 className="cs-page_title cs-font_50 cs-white_color">About Us</h1>
             <ol className="breadcrumb text-uppercase">
-              <li className="breadcrumb-item"><a href="/">Home</a></li>
+              <li className="breadcrumb-item"><Link to="/">Home</Link></li>
               <li className="breadcrumb-item active">About</li>
             </ol>
           </div>
@@ -52,12 +60,12 @@ const About = () => {
                 <div className="cs-height_25 cs-height_lg_25"></div>
                 <div className="cs-separator cs-accent_bg"></div>
                 <div className="cs-height_25 cs-height_lg_25"></div>
-                <a href="/contact" className="cs-text_btn">
+                <Link to="/contact" className="cs-text_btn">
                   <span>Send Us A Message</span>
                   <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z" fill="currentColor" />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

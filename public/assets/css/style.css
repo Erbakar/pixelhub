@@ -144,7 +144,7 @@ button {
 
 a:hover {
   text-decoration: none;
-  color: #FF4A17;
+  color: #fd550e;
 }
 
 table {
@@ -243,7 +243,7 @@ input, textarea {
   border-width: 3px;
   border-style: solid;
   border-color: transparent;
-  border-top-color: #FF4A17;
+  border-top-color: #fd550e;
   border-radius: 50%;
   position: absolute;
   width: calc(100% + 6px);
@@ -266,7 +266,7 @@ input, textarea {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: #FF4A17;
+  background-color: #fd550e;
 }
 
 @-webkit-keyframes spin {
@@ -746,10 +746,13 @@ hr {
 .cs-ternary_color {
   color: #999696;
 }
-
+.cs-percentage_in {
+position: relative;
+z-index: 2;
+}
 .cs-accent_color,
 .cs-accent_color_hover:hover {
-  color: #FF4A17;
+  color: #f2f2f2;
 }
 
 .cs-white_bg {
@@ -766,7 +769,7 @@ hr {
 
 .cs-accent_bg,
 .cs-accent_bg_hover:hover {
-  background-color: #FF4A17;
+  background-color: #fd550e;
 }
 
 .cs-primary_bg,
@@ -860,7 +863,7 @@ hr {
   line-height: 1.5em;
   font-weight: 600;
   border-radius: 15px;
-  background-color: #FF4A17;
+  background-color: #fd550e;
   color: #fff;
   cursor: pointer;
 }
@@ -949,7 +952,7 @@ hr {
   background-color: #000;
 }
 .cs-pagination_item.active {
-  background-color: #FF4A17;
+  background-color: #fd550e;
   color: #fff;
   pointer-events: none;
 }
@@ -967,7 +970,7 @@ hr {
   color: #fff;
 }
 .cs-form_field:focus {
-  border-color: #FF4A17;
+  border-color: #fd550e;
 }
 
 label {
@@ -1077,11 +1080,11 @@ label {
   cursor: pointer;
 }
 .cs-accordian_head:hover .cs-accordian_title {
-  color: #FF4A17;
+  color: #fd550e;
 }
 
 .cs-accordian {
-  border-bottom: 2px solid #FF4A17;
+  border-bottom: 2px solid #fd550e;
   padding-bottom: 25px;
 }
 .cs-accordian:not(:last-child) {
@@ -1141,7 +1144,7 @@ label {
 .cs-cursor_lg {
   width: 40px;
   height: 40px;
-  border: 1px solid #FF4A17;
+  border: 1px solid #fd550e;
   left: 0;
   top: 0;
   pointer-events: none;
@@ -1152,7 +1155,7 @@ label {
 .cs-cursor_sm {
   width: 8px;
   height: 8px;
-  background-color: #FF4A17;
+  background-color: #fd550e;
   left: 0;
   top: 0;
   pointer-events: none;
@@ -1327,7 +1330,7 @@ label {
   font-size: 120px;
   line-height: 1.2em;
   color: transparent;
-  -webkit-text-stroke: 2px #FF4A17;
+  -webkit-text-stroke: 2px #fd550e;
 }
 
 .cs-moving_text_in {
@@ -1358,7 +1361,7 @@ label {
 }
 
 .cs-moving_text_wrap.cs-type1 {
-  color: #FF4A17;
+  color: #fd550e;
 }
 .cs-moving_text_wrap.cs-type1 .cs-moving_text {
   padding: 0;
@@ -1367,7 +1370,7 @@ label {
 }
 .cs-moving_text_wrap.cs-type1 .cs-moving_text a:hover {
   color: transparent;
-  -webkit-text-stroke: 2px #FF4A17;
+  -webkit-text-stroke: 2px #fd550e;
 }
 .cs-moving_text_wrap.cs-type1:hover .cs-moving_text {
   -webkit-animation-play-state: paused;
@@ -1548,7 +1551,7 @@ label {
 }
 
 .cs-section_heading.cs-style1 .cs-section_subtitle {
-  color: #999696;
+  color: #f2f2f2;
   font-size: 18px;
   margin-bottom: 20px;
 }
@@ -1732,7 +1735,7 @@ label {
   height: 0px;
   border-top: 9px solid transparent;
   border-bottom: 9px solid transparent;
-  border-left: 14px solid #FF4A17;
+  border-left: 14px solid #fd550e;
 }
 
 .cs-shape_wrap_1 {
@@ -1913,7 +1916,7 @@ label {
   top: -30px;
   height: 151px;
   width: 151px;
-  background: #FF4A17;
+  background: #fd550e;
   opacity: 0.8;
   -webkit-filter: blur(125px);
           filter: blur(125px);
@@ -1973,7 +1976,7 @@ label {
   width: 100%;
   right: -60px;
   bottom: -60px;
-  background-color: #FF4A17;
+  background-color: #fd550e;
   border-radius: inherit;
 }
 .cs-image_layer.cs-style1.cs-size_md {
@@ -2021,7 +2024,7 @@ label {
   display: inline-flex;
 }
 .cs-tab_links.cs-style1 li.active a {
-  background-color: #FF4A17;
+  background-color: #fd550e;
   border-radius: 10px;
 }
 
@@ -2241,13 +2244,13 @@ label {
   transition: all 0.4s ease;
   z-index: 10;
   background-color: #000000;
-  color: #FF4A17;
+  color: #fd550e;
   -webkit-box-shadow: 0px 1px 5px 1px rgba(22, 22, 22, 0.2);
           box-shadow: 0px 1px 5px 1px rgba(22, 22, 22, 0.2);
   border-radius: 50%;
 }
 .cs-scrollup:hover {
-  background-color: #FF4A17;
+  background-color: #fd550e;
   color: #fff;
 }
 
@@ -2306,7 +2309,7 @@ label {
   position: absolute;
   height: 7px;
   width: 0%;
-  background-color: #FF4A17;
+  background-color: #fd550e;
   left: 0;
   bottom: 20px;
   z-index: -1;
@@ -2366,12 +2369,12 @@ label {
 }
 
 .form-check-input:checked {
-  background-color: #FF4A17;
-  border-color: #FF4A17;
+  background-color: #fd550e;
+  border-color: #fd550e;
 }
 
 .form-check-input:focus {
-  border-color: #FF4A17;
+  border-color: #fd550e;
   -webkit-box-shadow: initial;
           box-shadow: initial;
 }
@@ -2814,8 +2817,8 @@ label {
 .cs-pagination.cs-style1 li {
   height: 16px;
   width: 16px;
-  background-color: #FF4A17;
-  border: 1px solid #FF4A17;
+  background-color: #fd550e;
+  border: 1px solid #fd550e;
   border-radius: 50%;
   margin: 0 8px;
   cursor: pointer;
@@ -2833,13 +2836,67 @@ label {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: #FF4A17;
+  background-color: #fd550e;
 }
 .cs-pagination.cs-style1 li.slick-active {
   background-color: transparent;
 }
 .cs-pagination.cs-style1 button {
   display: none;
+}
+
+/* Blog Pagination Styles */
+.cs-pagination.cs-style1 .cs-pagi_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 50px 0 0 0;
+}
+
+.cs-pagination.cs-style1 .cs-pagi_item {
+  height: auto;
+  width: auto;
+  background: none;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+}
+
+.cs-pagination.cs-style1 .cs-pagi_item::before {
+  display: none;
+}
+
+.cs-pagination.cs-style1 .cs-pagi_item span,
+.cs-pagination.cs-style1 .cs-pagi_item button.cs-pagi_btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid #4d4d4d;
+  background: transparent;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cs-pagination.cs-style1 .cs-pagi_item.active span {
+  background-color: #fd550e;
+  border-color: #fd550e;
+  color: #fff;
+}
+
+.cs-pagination.cs-style1 .cs-pagi_item button.cs-pagi_btn:hover {
+  background-color: #fd550e;
+  border-color: #fd550e;
+  color: #fff;
 }
 
 .cs-swiper_pagination {
@@ -2858,8 +2915,8 @@ label {
 .cs-swiper_pagination .swiper-pagination-bullet {
   height: 16px;
   width: 16px;
-  background-color: #FF4A17;
-  border: 1px solid #FF4A17;
+  background-color: #fd550e;
+  border: 1px solid #fd550e;
   border-radius: 50%;
   margin: 0 8px !important;
   cursor: pointer;
@@ -2878,7 +2935,7 @@ label {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: #FF4A17;
+  background-color: #fd550e;
 }
 .cs-swiper_pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: transparent;
@@ -2939,7 +2996,7 @@ label {
   display: none;
 }
 .swiper-vertical > .swiper-pagination-bullets.cs-swiper_pagination.cs-slide_numbers .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  color: #FF4A17;
+  color: #fd550e;
 }
 .swiper-vertical > .swiper-pagination-bullets.cs-swiper_pagination.cs-slide_numbers .swiper-pagination-bullet:nth-child(1)::after {
   content: "01";
@@ -2990,8 +3047,8 @@ label {
 }
 .cs-slider_arrows.cs-style1 .slick-arrow:hover {
   color: #fff;
-  background-color: #FF4A17;
-  border-color: #FF4A17;
+  background-color: #fd550e;
+  border-color: #fd550e;
 }
 
 .cs-slider_arrows.cs-style2 .slick-arrow {
@@ -3111,8 +3168,8 @@ label {
   z-index: 2;
 }
 .slider-for .slick-arrow:hover {
-  background-color: #FF4A17;
-  border-color: #FF4A17;
+  background-color: #fd550e;
+  border-color: #fd550e;
 }
 .slider-for .slick-prev {
   background-image: url(../img/prev_arrow.svg);
@@ -3852,7 +3909,7 @@ label {
           transform: rotate(45deg);
 }
 .cs-close:hover {
-  color: #FF4A17;
+  color: #fd550e;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
@@ -3862,7 +3919,7 @@ label {
   right: 5px;
   top: 0;
   font-size: 12px;
-  background-color: #FF4A17;
+  background-color: #fd550e;
   color: #fff;
   display: inline-block;
   line-height: 1.6em;
@@ -4031,7 +4088,7 @@ label {
     position: absolute;
     -webkit-box-shadow: 0px 1px 2px 0px rgba(2, 0, 181, 0.1);
             box-shadow: 0px 1px 2px 0px rgba(2, 0, 181, 0.1);
-    border-top: 2px solid #FF4A17;
+    border-top: 2px solid #fd550e;
     padding: 10px 0;
     z-index: 100;
     opacity: 0;
@@ -4403,12 +4460,12 @@ label {
   margin: 7px;
 }
 .cs-social_btns.cs-style1 a:hover {
-  border-color: #FF4A17;
+  border-color: #fd550e;
   -webkit-transform: scale(1.08);
           transform: scale(1.08);
 }
 .cs-social_btns.cs-style1 a:hover svg {
-  fill: #FF4A17;
+  fill: #fd550e;
 }
 
 .cs-newsletter.cs-style1 .cs-newsletter_form {
@@ -4428,7 +4485,7 @@ label {
   padding: 7px 25px;
   border-radius: 10px;
   color: #fff;
-  background-color: #FF4A17;
+  background-color: #fd550e;
   position: absolute;
   top: 5px;
   right: 5px;
@@ -4495,7 +4552,8 @@ label {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px 0;
+  padding:10px 20px 0;
+  height: 20px;
   border-top: 1px solid #4D4D4D;
 }
 .cs-bottom_footer > * {
@@ -4696,7 +4754,7 @@ label {
   left: 50%;
   margin-left: -5px;
   border-radius: 50%;
-  background-color: #FF4A17;
+  background-color: #fd550e;
   bottom: -5px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -4715,7 +4773,7 @@ label {
           justify-content: flex-start;
 }
 .cs-isotop_filter.cs-style1 .active a {
-  color: #FF4A17;
+  color: #fd550e;
 }
 .cs-isotop_filter.cs-style1 .active a::before {
   -webkit-transform: scale(1);
@@ -4839,8 +4897,8 @@ label {
 }
 .tag-cloud-link:hover {
   color: #fff;
-  background-color: #FF4A17;
-  border-color: #FF4A17;
+  background-color: #fd550e;
+  border-color: #fd550e;
 }
 
 .widget_archive ul,
@@ -4932,7 +4990,7 @@ label {
   transition: all 0.3s ease;
 }
 .cs-sidebar_search input:focus {
-  border-color: #FF4A17;
+  border-color: #fd550e;
 }
 
 .cs-sidebar_search_btn {
@@ -4948,7 +5006,13 @@ label {
   transition: all 0.3s ease;
 }
 .cs-sidebar_search_btn:hover {
-  color: #FF4A17;
+  color: #fd550e;
+}
+.cs-sidebar_search  .cs-search_btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #fd550e;
 }
 
 .cs-author_card img {
@@ -5215,7 +5279,7 @@ label {
   width: 0%;
   left: 0;
   top: 50%;
-  background-color: #FF4A17;
+  background-color: #fd550e;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
@@ -5389,7 +5453,7 @@ label {
   width: 100%;
   bottom: 8px;
   left: 0;
-  background-color: #FF4A17;
+  background-color: #fd550e;
   z-index: -1;
 }
 .cs-hero.cs-style4 .cs-hero_title:last-child {
@@ -5449,7 +5513,7 @@ label {
   display: inline-flex;
 }
 .cs-hero.cs-style5.cs_type_1 .cs-hero_btn:hover {
-  color: #FF4A17;
+  color: #fd550e;
   -webkit-transform: scale(1.15) rotate(15deg);
           transform: scale(1.15) rotate(15deg);
 }
@@ -5560,8 +5624,8 @@ label {
   height: 173px;
   width: 173px;
   border-radius: 50%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff4a17), to(rgba(255, 74, 23, 0.5)));
-  background: linear-gradient(180deg, #ff4a17 0%, rgba(255, 74, 23, 0.5) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fd550e), to(rgba(255, 74, 23, 0.5)));
+  background: linear-gradient(180deg, #fd550e 0%, rgba(255, 74, 23, 0.5) 100%);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   top: 35px;
@@ -5998,7 +6062,7 @@ label {
 }
 .cs-swiper_button_prev:hover,
 .cs-swiper_button_next:hover {
-  color: #FF4A17;
+  color: #fd550e;
 }
 
 .cs-swiper_button_prev {
@@ -6474,8 +6538,8 @@ label {
 }
 .cs-iconbox_3_list .cs-hover_tab.active .cs-iconbox_icon {
   color: #fff;
-  background-color: #FF4A17;
-  border-color: #FF4A17;
+  background-color: #fd550e;
+  border-color: #fd550e;
 }
 .cs-iconbox_3_list.cs-style1 {
   padding-left: 0;
@@ -6603,8 +6667,8 @@ label {
 }
 .cs-iconbox.cs-style3 .cs-iconbox_icon:hover {
   color: #fff;
-  background-color: #FF4A17;
-  border-color: #FF4A17;
+  background-color: #fd550e;
+  border-color: #fd550e;
 }
 .cs-iconbox.cs-style3 .cs-iconbox_title {
   font-size: 30px;
@@ -6615,8 +6679,8 @@ label {
 }
 .cs-iconbox.cs-style3:hover .cs-iconbox_icon {
   color: #fff;
-  background-color: #FF4A17;
-  border-color: #FF4A17;
+  background-color: #fd550e;
+  border-color: #fd550e;
 }
 
 .cs-iconbox_4_wrap {
@@ -6685,7 +6749,7 @@ label {
   transition: all 0.4s ease-in-out;
 }
 .cs-iconbox.cs-style4 .cs_iconbox_btn:hover {
-  color: #FF4A17;
+  color: #fd550e;
 }
 .cs-iconbox.cs-style4 .cs_iconbox_btn:hover span {
   margin-right: 10px;
@@ -6885,11 +6949,14 @@ label {
   line-height: 1.45em;
 }
 .cs-post.cs-style1 .cs-post_info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+
   width: 100%;
   padding: 35px 25px;
+}
+
+.cs-post_tags_in a{
+  margin-right: 10px;
+  color: #fd550e;
 }
 
 .cs-slider .cs-post.cs-style1 {
@@ -6949,7 +7016,7 @@ label {
 .cs-post.cs-style2 blockquote {
   font-size: 18px;
   line-height: 1.9em;
-  border-left: 5px solid #FF4A17;
+  border-left: 5px solid #fd550e;
   background-color: #000;
   padding: 40px 35px;
   font-weight: 600;
@@ -7037,7 +7104,7 @@ label {
   line-height: 1.6em;
 }
 .cs-post.cs-style3 .cs-text_btn {
-  color: #FF4A17;
+  color: #fd550e;
 }
 .cs-post.cs-style3 .cs-posted_by {
   display: -webkit-box;
@@ -7313,7 +7380,7 @@ label {
   17. CTA
 ----------------------------------------------------------------*/
 .cs-cta.cs-style1 {
-  padding: 90px 30px;
+  padding: 30px 30px;
   border-radius: 15px;
 }
 .cs-cta.cs-style1 .cs-cta_in {
@@ -7766,7 +7833,7 @@ label {
   white-space: nowrap;
   letter-spacing: 0.05em;
   color: transparent;
-  -webkit-text-stroke: 2px #ff4a17;
+  -webkit-text-stroke: 2px #fd550e;
   font-size: 50px;
 }
 .cs-portfolio.cs-style2.cs-type1 .cs-portfolio_img_title {
@@ -8116,7 +8183,7 @@ label {
   top: -55px;
   height: 135px;
   width: 135px;
-  background: #FF4A17;
+  background: #fd550e;
   -webkit-filter: blur(125px);
           filter: blur(125px);
   -webkit-transition: all 0.4s ease;
@@ -8248,8 +8315,8 @@ label {
 }
 .cs-shop_sidebar_tag_list a:hover {
   color: #fff;
-  background-color: #FF4A17;
-  border-color: #FF4A17;
+  background-color: #fd550e;
+  border-color: #fd550e;
 }
 
 .cs-shop_search {
@@ -8363,7 +8430,7 @@ label {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 6px;
-  background-color: #FF4A17;
+  background-color: #fd550e;
   color: #fff;
   border-radius: 50%;
   -webkit-transform: scale(0);
@@ -8374,7 +8441,7 @@ label {
 }
 .cs-product_card.cs_style_1 .cs-card_btns a:hover {
   background-color: #fff;
-  color: #FF4A17;
+  color: #fd550e;
 }
 .cs-product_card.cs_style_1 .cs-product_title {
   font-size: 18px;
@@ -8412,7 +8479,7 @@ label {
   margin-top: 20px;
 }
 .cs-single_product_nav .slick-current img {
-  border-color: #FF4A17;
+  border-color: #fd550e;
 }
 .cs-single_product_nav .slick-slide:not(.slick-current) {
   cursor: pointer;
@@ -8476,7 +8543,7 @@ label {
   bottom: 7px;
 }
 .cs-quantity_button:hover {
-  color: #FF4A17;
+  color: #fd550e;
 }
 
 .cs-quantity_buttons {
@@ -8521,7 +8588,7 @@ label {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 12px 45px;
-  background-color: #FF4A17;
+  background-color: #fd550e;
   color: #fff;
   border-radius: 5px;
   outline: none;
@@ -8536,7 +8603,7 @@ label {
   background-color: #000;
 }
 .cs-product_btn.cs-color1:hover {
-  background-color: #FF4A17;
+  background-color: #fd550e;
 }
 @media (max-width: 380px) {
   .cs-product_btn {
@@ -8803,7 +8870,7 @@ label {
 }
 .cs-cart-offer .cs-shop-input {
   min-width: 160px;
-  border-color: #FF4A17;
+  border-color: #fd550e;
 }
 .cs-cart-offer .cs-cart-offer-col {
   display: -webkit-box;
@@ -8832,7 +8899,7 @@ label {
 .cs-coupon-doce-form input {
   background-color: transparent;
   padding: 9px 15px;
-  border: 1px solid #FF4A17;
+  border: 1px solid #fd550e;
   border-radius: 5px;
   height: 50px;
   width: 186px;
@@ -8902,7 +8969,7 @@ label {
 }
 
 .cs-checkout-alert a {
-  color: #FF4A17;
+  color: #fd550e;
 }
 .cs-checkout-alert a:hover {
   text-decoration: underline;
@@ -8952,7 +9019,7 @@ label {
   line-height: 1.6em;
 }
 .cs-payment_text a {
-  color: #FF4A17;
+  color: #fd550e;
 }
 
 .cs-order-summery {
@@ -9005,12 +9072,12 @@ label {
   position: relative;
 }
 .cs-header_cart:hover {
-  color: #FF4A17;
+  color: #fd550e;
 }
 
 .cs-header_cart_label {
   position: absolute;
-  background-color: #FF4A17;
+  background-color: #fd550e;
   font-weight: 600;
   font-size: 12px;
   line-height: 17px;
@@ -9060,8 +9127,8 @@ label {
   line-height: 1.5em;
 }
 .st-amount-wrap .st-filter-btn:hover {
-  background-color: #FF4A17;
-  border-color: #FF4A17;
+  background-color: #fd550e;
+  border-color: #fd550e;
   color: #fff;
 }
 
@@ -9073,7 +9140,7 @@ label {
 }
 
 .ui-widget-header {
-  background: #FF4A17;
+  background: #fd550e;
 }
 
 .ui-state-default,
@@ -9082,15 +9149,15 @@ label {
 .ui-button,
 html .ui-button.ui-state-disabled:hover,
 html .ui-button.ui-state-disabled:active {
-  border: 1px solid #FF4A17;
-  background: #FF4A17;
+  border: 1px solid #fd550e;
+  background: #fd550e;
 }
 
 .ui-state-active,
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
-  border: 1px solid #FF4A17;
-  background: #FF4A17;
+  border: 1px solid #fd550e;
+  background: #fd550e;
   outline: none;
 }
 
@@ -9389,7 +9456,7 @@ html .ui-button.ui-state-disabled:active {
 }
 .rtl .cs-post.cs-style2 blockquote {
   border-left: 0;
-  border-right: 5px solid #FF4A17;
+  border-right: 5px solid #fd550e;
 }
 .rtl .cs-page_navigation > div:not(:last-child) {
   margin-right: 0;
@@ -9502,4 +9569,121 @@ html .ui-button.ui-state-disabled:active {
     margin-right: auto;
     margin-left: auto;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* Post Navigation */
+.cs-post_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid #E4E4E4;
+}
+
+.cs-post_nav .cs-post_nav_item {
+  flex: 1;
+}
+
+.cs-post_nav .cs-post_nav_item.cs-post_nav_left {
+  text-align: left;
+}
+
+.cs-post_nav .cs-post_nav_item.cs-post_nav_right {
+  text-align: right;
+}
+
+.cs-post_nav .cs-post_nav_link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  color: #fd550e;
+}
+
+.cs-post_nav .cs-post_nav_link:hover {
+  background-color: #ff6b35;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cs-post_nav .cs-post_nav_link:hover .cs-post_nav_icon {
+  transform: translateX(-3px);
+}
+
+.cs-post_nav .cs-post_nav_text {
+  flex: 1;
+}
+
+.cs-post_nav .cs-post_nav_text span {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cs-post_nav .cs-post_nav_text h3 {
+  font-size: 18px;
+  margin: 0;
+  line-height: 1.4;
+  color: inherit;
+  font-weight: 600;
+}
+
+.cs-post_nav .cs-post_nav_icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease;
+}
+
+.cs-post_nav .cs-post_nav_icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.cs-post_nav .cs-post_nav_right .cs-post_nav_link {
+  flex-direction: row-reverse;
+}
+
+.cs-post_nav .cs-post_nav_right .cs-post_nav_link:hover .cs-post_nav_icon {
+  transform: translateX(3px);
+}
+
+
+@media screen and (max-width: 768px) {
+  .cs-post_nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .cs-post_nav .cs-post_nav_item {
+    width: 100%;
+  }
+  
+  .cs-post_nav .cs-post_nav_item.cs-post_nav_left,
+  .cs-post_nav .cs-post_nav_item.cs-post_nav_right {
+    text-align: center;
+  }
+  
+  .cs-post_nav .cs-post_nav_link {
+    padding: 15px;
+  }
+  
+  .cs-post_nav .cs-post_nav_text h3 {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

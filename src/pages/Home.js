@@ -1,8 +1,73 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
+import { blogPosts } from '../data/blogData';
 
 const Home = () => {
+  const blogPostsArray = Object.entries(blogPosts).map(([slug, post]) => ({
+    slug,
+    ...post
+  }));
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "PixelHub",
+    "description": "Creative digital agency specializing in web design, development, and digital marketing",
+    "url": "https://pixelhub.com",
+    "logo": "https://pixelhub.com/assets/img/logo.svg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+44 454 7800 112",
+      "contactType": "customer service",
+      "email": "info@pixelhub.com"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "50 Wall Street Suite, 44150",
+      "addressLocality": "Ohio",
+      "addressCountry": "United States"
+    },
+    "sameAs": [
+      "https://linkedin.com/company/pixelhub",
+      "https://twitter.com/pixelhub",
+      "https://facebook.com/pixelhub",
+      "https://instagram.com/pixelhub"
+    ],
+    "service": [
+      {
+        "@type": "Service",
+        "name": "UI/UX Design",
+        "description": "Professional user interface and user experience design services"
+      },
+      {
+        "@type": "Service", 
+        "name": "Web Development",
+        "description": "Custom website development and web application solutions"
+      },
+      {
+        "@type": "Service",
+        "name": "Mobile App Development", 
+        "description": "Native and cross-platform mobile application development"
+      },
+      {
+        "@type": "Service",
+        "name": "Digital Marketing",
+        "description": "Comprehensive digital marketing and SEO optimization services"
+      }
+    ]
+  };
+
   return (
     <div>
+      <SEO 
+        title="PixelHub - Creative Digital Agency | Web Design & Development"
+        description="Transform your business with PixelHub's professional web design, UI/UX design, mobile app development, and digital marketing services. Get a quote today!"
+        keywords="web design, UI/UX design, mobile app development, digital marketing, creative agency, web development, branding, SEO optimization"
+        url="https://pixelhub.com/"
+        structuredData={structuredData}
+      />
+      
       {/* Hero Section */}
       <div className="cs-hero cs-style1 cs-bg cs-fixed_bg cs-shape_wrap_1" data-src="/assets/img/hero_bg.jpeg" id="home">
         <div className="cs-shape_1"></div>
@@ -15,12 +80,12 @@ const Home = () => {
             </h1>
             <div className="cs-hero_info">
               <div>
-                <a href="/contact" className="cs-text_btn">
+                <Link to="/contact" className="cs-text_btn">
                   <span>Get a Quote</span>
                   <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z" fill="currentColor" />
                   </svg>
-                </a>
+                </Link>
               </div>
               <div>
                 <div className="cs-hero_subtitle">
@@ -112,12 +177,12 @@ const Home = () => {
                 <h3 className="cs-section_subtitle">What Can We Do</h3>
                 <h2 className="cs-section_title">Services we can help you with</h2>
                 <div className="cs-height_45 cs-height_lg_20"></div>
-                <a href="/services" className="cs-text_btn wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                <Link to="/services" className="cs-text_btn wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
                   <span>See All Services</span>
                   <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z" fill="currentColor" />
                   </svg>
-                </a>
+                </Link>
               </div>
               <div className="cs-height_90 cs-height_lg_45"></div>
             </div>
@@ -126,55 +191,55 @@ const Home = () => {
                 <div className="col-lg-3 col-sm-6 cs-hidden_mobile"></div>
                 <div className="col-lg-3 col-sm-6">
                   <div className="cs-hobble">
-                    <a href="/services" className="cs-card cs-style1 cs-hover_layer1">
+                    <Link to="/services" className="cs-card cs-style1 cs-hover_layer1">
                       <img src="/assets/img/service_1.jpeg" alt="Service" />
                       <div className="cs-card_overlay"></div>
                       <div className="cs-card_info">
                         <span className="cs-hover_layer3 cs-accent_bg"></span>
                         <h2 className="cs-card_title">UI/UX design</h2>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                   <div className="cs-height_0 cs-height_lg_30"></div>
                 </div>
                 <div className="col-lg-3 col-sm-6 cs-hidden_mobile"></div>
                 <div className="col-lg-3 col-sm-6">
                   <div className="cs-hobble">
-                    <a href="/services" className="cs-card cs-style1 cs-hover_layer1">
+                    <Link to="/services" className="cs-card cs-style1 cs-hover_layer1">
                       <img src="/assets/img/service_2.jpeg" alt="Service" />
                       <div className="cs-card_overlay"></div>
                       <div className="cs-card_info">
                         <span className="cs-hover_layer3 cs-accent_bg"></span>
                         <h2 className="cs-card_title">React.js Development</h2>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                   <div className="cs-height_0 cs-height_lg_30"></div>
                 </div>
                 <div className="col-lg-3 col-sm-6">
                   <div className="cs-hobble">
-                    <a href="/services" className="cs-card cs-style1 cs-hover_layer1">
+                    <Link to="/services" className="cs-card cs-style1 cs-hover_layer1">
                       <img src="/assets/img/service_3.jpeg" alt="Service" />
                       <div className="cs-card_overlay"></div>
                       <div className="cs-card_info">
                         <span className="cs-hover_layer3 cs-accent_bg"></span>
                         <h2 className="cs-card_title">Digital Marketing</h2>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                   <div className="cs-height_0 cs-height_lg_30"></div>
                 </div>
                 <div className="col-lg-3 col-sm-6 cs-hidden_mobile"></div>
                 <div className="col-lg-3 col-sm-6">
                   <div className="cs-hobble">
-                    <a href="/services" className="cs-card cs-style1 cs-hover_layer1">
+                    <Link to="/services" className="cs-card cs-style1 cs-hover_layer1">
                       <img src="/assets/img/service_4.jpeg" alt="Service" />
                       <div className="cs-card_overlay"></div>
                       <div className="cs-card_info">
                         <span className="cs-hover_layer3 cs-accent_bg"></span>
                         <h2 className="cs-card_title">Technology</h2>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                   <div className="cs-height_0 cs-height_lg_30"></div>
                 </div>
@@ -199,7 +264,7 @@ const Home = () => {
           <div className="cs-slider_container" data-autoplay="0" data-loop="1" data-speed="600" data-center="1" data-slides-per-view="1">
             <div className="cs-slider_wrapper">
               <div className="cs-slide">
-                <a href="/portfolio" className="cs-portfolio cs-style1 cs-bg">
+                <Link to="/portfolio" className="cs-portfolio cs-style1 cs-bg">
                   <div className="cs-portfolio_hover"></div>
                   <div className="cs-portfolio_bg" data-src="/assets/img/portfolio_1.jpeg"></div>
                   <div className="cs-portfolio_info">
@@ -207,10 +272,10 @@ const Home = () => {
                     <h2 className="cs-portfolio_title">E-Commerce Dashboard</h2>
                     <div className="cs-portfolio_subtitle">UI/UX Design</div>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="cs-slide">
-                <a href="/portfolio" className="cs-portfolio cs-style1 cs-bg">
+                <Link to="/portfolio" className="cs-portfolio cs-style1 cs-bg">
                   <div className="cs-portfolio_hover"></div>
                   <div className="cs-portfolio_bg" data-src="/assets/img/portfolio_2.jpeg"></div>
                   <div className="cs-portfolio_info">
@@ -218,10 +283,10 @@ const Home = () => {
                     <h2 className="cs-portfolio_title">Corporate Website</h2>
                     <div className="cs-portfolio_subtitle">Web Development</div>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="cs-slide">
-                <a href="/portfolio" className="cs-portfolio cs-style1 cs-bg">
+                <Link to="/portfolio" className="cs-portfolio cs-style1 cs-bg">
                   <div className="cs-portfolio_hover"></div>
                   <div className="cs-portfolio_bg" data-src="/assets/img/portfolio_3.jpeg"></div>
                   <div className="cs-portfolio_info">
@@ -229,10 +294,10 @@ const Home = () => {
                     <h2 className="cs-portfolio_title">Food Delivery App</h2>
                     <div className="cs-portfolio_subtitle">Mobile Application</div>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="cs-slide">
-                <a href="/portfolio" className="cs-portfolio cs-style1 cs-bg">
+                <Link to="/portfolio" className="cs-portfolio cs-style1 cs-bg">
                   <div className="cs-portfolio_hover"></div>
                   <div className="cs-portfolio_bg" data-src="/assets/img/portfolio_4.jpeg"></div>
                   <div className="cs-portfolio_info">
@@ -240,10 +305,10 @@ const Home = () => {
                     <h2 className="cs-portfolio_title">Tech Startup Branding</h2>
                     <div className="cs-portfolio_subtitle">Logo Design</div>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="cs-slide">
-                <a href="/portfolio" className="cs-portfolio cs-style1 cs-bg">
+                <Link to="/portfolio" className="cs-portfolio cs-style1 cs-bg">
                   <div className="cs-portfolio_hover"></div>
                   <div className="cs-portfolio_bg" data-src="/assets/img/portfolio_5.jpeg"></div>
                   <div className="cs-portfolio_info">
@@ -251,7 +316,7 @@ const Home = () => {
                     <h2 className="cs-portfolio_title">Banking App Interface</h2>
                     <div className="cs-portfolio_subtitle">UI/UX Design</div>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -421,11 +486,11 @@ const Home = () => {
       <section className="cs-gradient_bg_1 cs-shape_wrap_3 cs-parallax">
         <div className="cs-shape_3 cs-to_up">
           <svg width="162" height="181" viewBox="0 0 162 181" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M156.833 178.434C156.833 177.053 157.954 175.932 159.335 175.932C160.716 175.932 161.837 177.053 161.837 178.434C161.837 179.814 160.716 180.935 159.335 180.935C157.954 180.935 156.833 179.814 156.833 178.434Z" fill="#FF4A17" />
-            <path d="M117.65 178.434C117.65 177.053 118.771 175.932 120.152 175.932C121.533 175.932 122.653 177.053 122.653 178.434C122.653 179.814 121.533 180.935 120.152 180.935C118.771 180.935 117.65 179.814 117.65 178.434Z" fill="#FF4A17" />
-            <path d="M78.4694 178.434C78.4694 177.053 79.5902 175.932 80.971 175.932C82.3517 175.932 83.4726 177.053 83.4726 178.434C83.4726 179.814 82.3517 180.935 80.971 180.935C79.5876 180.935 78.4694 179.814 78.4694 178.434Z" fill="#FF4A17" />
-            <path d="M39.286 178.434C39.286 177.053 40.4069 175.932 41.7876 175.932C43.1684 175.932 44.2893 177.053 44.2893 178.434C44.2893 179.814 43.1684 180.935 41.7876 180.935C40.4069 180.935 39.286 179.814 39.286 178.434Z" fill="#FF4A17" />
-            <path d="M0.102661 178.434C0.102661 177.053 1.22354 175.932 2.60429 175.932C3.98504 175.932 5.10591 177.053 5.10591 178.434C5.10591 179.814 3.98504 180.935 2.60429 180.935C1.22091 180.935 0.102661 179.814 0.102661 178.434Z" fill="#FF4A17" />
+            <path d="M156.833 178.434C156.833 177.053 157.954 175.932 159.335 175.932C160.716 175.932 161.837 177.053 161.837 178.434C161.837 179.814 160.716 180.935 159.335 180.935C157.954 180.935 156.833 179.814 156.833 178.434Z" fill="#fd550e" />
+            <path d="M117.65 178.434C117.65 177.053 118.771 175.932 120.152 175.932C121.533 175.932 122.653 177.053 122.653 178.434C122.653 179.814 121.533 180.935 120.152 180.935C118.771 180.935 117.65 179.814 117.65 178.434Z" fill="#fd550e" />
+            <path d="M78.4694 178.434C78.4694 177.053 79.5902 175.932 80.971 175.932C82.3517 175.932 83.4726 177.053 83.4726 178.434C83.4726 179.814 82.3517 180.935 80.971 180.935C79.5876 180.935 78.4694 179.814 78.4694 178.434Z" fill="#fd550e" />
+            <path d="M39.286 178.434C39.286 177.053 40.4069 175.932 41.7876 175.932C43.1684 175.932 44.2893 177.053 44.2893 178.434C44.2893 179.814 43.1684 180.935 41.7876 180.935C40.4069 180.935 39.286 179.814 39.286 178.434Z" fill="#fd550e" />
+            <path d="M0.102661 178.434C0.102661 177.053 1.22354 175.932 2.60429 175.932C3.98504 175.932 5.10591 177.053 5.10591 178.434C5.10591 179.814 3.98504 180.935 2.60429 180.935C1.22091 180.935 0.102661 179.814 0.102661 178.434Z" fill="#fd550e" />
           </svg>
         </div>
         <div className="cs-height_130 cs-height_lg_80"></div>
@@ -533,88 +598,34 @@ const Home = () => {
                 <h3 className="cs-section_subtitle">Our Blog</h3>
                 <h2 className="cs-section_title">Explore recent publication</h2>
                 <div className="cs-height_45 cs-height_lg_20"></div>
-                <a href="/blog" className="cs-text_btn wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
+                <Link to="/blog" className="cs-text_btn wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
                   <span>View More Blog</span>
                   <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z" fill="currentColor" />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="cs-slider_right">
               <div className="cs-post_wrap">
                 <div className="cs-slider_container" data-autoplay="1" data-loop="1" data-speed="1000" data-center="0" data-variable-width="1" data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="2" data-md-slides="2" data-lg-slides="2" data-add-slides="3">
                   <div className="cs-slider_wrapper">
-                    <div className="cs-slide">
-                      <div className="cs-post cs-style1" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                        <a href="/blog" className="cs-post_thumb">
-                          <img src="/assets/img/post_1.jpeg" alt="Post" />
-                          <div className="cs-post_overlay"></div>
-                        </a>
-                        <div className="cs-post_info" style={{flex: '1', display: 'flex', flexDirection: 'column'}}>
-                          <div className="cs-posted_by">07 Mar 2022</div>
-                          <h2 className="cs-post_title" style={{flex: '1'}}>
-                            <a href="/blog">How to keep fear from ruining your art business with confident</a>
-                          </h2>
+                    {blogPostsArray.slice(0, 5).map((post) => (
+                      <div key={post.slug} className="cs-slide">
+                        <div className="cs-post cs-style1" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+                          <Link to={`/blog/${post.slug}`} className="cs-post_thumb">
+                            <img src={post.image} alt={post.title} />
+                            <div className="cs-post_overlay"></div>
+                          </Link>
+                          <div className="cs-post_info" style={{flex: '1', display: 'flex', flexDirection: 'column'}}>
+                            <div className="cs-posted_by">{post.date}</div>
+                            <h2 className="cs-post_title" style={{flex: '1'}}>
+                              <Link to={`/blog/${post.slug}`}>{post.title}</Link>
+                            </h2>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="cs-slide">
-                      <div className="cs-post cs-style1" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                        <a href="/blog" className="cs-post_thumb">
-                          <img src="/assets/img/post_2.jpeg" alt="Post" />
-                          <div className="cs-post_overlay"></div>
-                        </a>
-                        <div className="cs-post_info" style={{flex: '1', display: 'flex', flexDirection: 'column'}}>
-                          <div className="cs-posted_by">10 Feb 2022</div>
-                          <h2 className="cs-post_title" style={{flex: '1'}}>
-                            <a href="/blog">Artistic mind will be great for creation anything</a>
-                          </h2>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="cs-slide">
-                      <div className="cs-post cs-style1" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                        <a href="/blog" className="cs-post_thumb">
-                          <img src="/assets/img/post_3.jpeg" alt="Post" />
-                          <div className="cs-post_overlay"></div>
-                        </a>
-                        <div className="cs-post_info" style={{flex: '1', display: 'flex', flexDirection: 'column'}}>
-                          <div className="cs-posted_by">05 Apr 2022</div>
-                          <h2 className="cs-post_title" style={{flex: '1'}}>
-                            <a href="/blog">A.I will take over all job for human within next year</a>
-                          </h2>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="cs-slide">
-                      <div className="cs-post cs-style1" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                        <a href="/blog" className="cs-post_thumb">
-                          <img src="/assets/img/post_4.jpeg" alt="Post" />
-                          <div className="cs-post_overlay"></div>
-                        </a>
-                        <div className="cs-post_info" style={{flex: '1', display: 'flex', flexDirection: 'column'}}>
-                          <div className="cs-posted_by">15 Jan 2022</div>
-                          <h2 className="cs-post_title" style={{flex: '1'}}>
-                            <a href="/blog">Professional design trends in 2022</a>
-                          </h2>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="cs-slide">
-                      <div className="cs-post cs-style1" style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-                        <a href="/blog" className="cs-post_thumb">
-                          <img src="/assets/img/post_5.jpeg" alt="Post" />
-                          <div className="cs-post_overlay"></div>
-                        </a>
-                        <div className="cs-post_info" style={{flex: '1', display: 'flex', flexDirection: 'column'}}>
-                          <div className="cs-posted_by">20 Dec 2021</div>
-                          <h2 className="cs-post_title" style={{flex: '1'}}>
-                            <a href="/blog">Creative solutions for modern businesses</a>
-                          </h2>
-                        </div>
-                      </div>
-                    </div>
+                    ))}
                   </div>
                 </div>
                 <div className="cs-pagination cs-style1 cs-hidden_desktop"></div>
@@ -630,16 +641,20 @@ const Home = () => {
       {/* CTA Section */}
       <section className="cs-accent_bg">
         <div className="container">
-          <div className="cs-section_heading cs-style1 text-center">
-            <h3 className="cs-section_subtitle cs-accent_color">Let's Work Together</h3>
-            <h2 className="cs-section_title cs-white_color">Need a successful project?</h2>
-            <div className="cs-height_30 cs-height_lg_20"></div>
-            <a href="/contact" className="cs-text_btn cs-type1">
-              <span>Send Message</span>
-              <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z" fill="currentColor" />
-              </svg>
-            </a>
+          <div className="cs-cta cs-style1">
+            <div className="cs-cta_in text-center">
+              <div className="cs-section_heading cs-style1">
+                <h3 className="cs-section_subtitle cs-white_color">Let's Work Together</h3>
+                <h2 className="cs-section_title cs-white_color">Need a successful project?</h2>
+                <div className="cs-height_30 cs-height_lg_20"></div>
+                <Link to="/contact" className="cs-text_btn cs-type1">
+                  <span>Send Message</span>
+                  <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z" fill="currentColor" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
