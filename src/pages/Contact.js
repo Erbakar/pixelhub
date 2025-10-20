@@ -9,6 +9,7 @@ const Contact = () => {
     project: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -17,10 +18,57 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Form submission logic here
+    setIsSubmitting(true);
+    
+    try {
+      // Form validation
+      if (!formData.name || !formData.email || !formData.project || !formData.message) {
+        alert('Lütfen tüm alanları doldurun.');
+        setIsSubmitting(false);
+        return;
+      }
+
+      // Email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(formData.email)) {
+        alert('Lütfen geçerli bir email adresi girin.');
+        setIsSubmitting(false);
+        return;
+      }
+
+      // Create mailto link with form data
+      const subject = encodeURIComponent(`Yeni İletişim Formu - ${formData.project}`);
+      const body = encodeURIComponent(
+        `İsim: ${formData.name}\n` +
+        `Email: ${formData.email}\n` +
+        `Proje Türü: ${formData.project}\n\n` +
+        `Mesaj:\n${formData.message}\n\n` +
+        `Bu mesaj PixelHub web sitesi iletişim formundan gönderilmiştir.`
+      );
+      
+      const mailtoLink = `mailto:info@data212.com?subject=${subject}&body=${body}`;
+      
+      // Open default email client
+      window.location.href = mailtoLink;
+      
+      // Reset form after sending
+      setFormData({
+        name: '',
+        email: '',
+        project: '',
+        message: ''
+      });
+      
+      // Show success message
+      alert('Email uygulamanız açılacak. Mesajınızı gönderdikten sonra kapatabilirsiniz.');
+    } catch (error) {
+      console.error('Form submission error:', error);
+      alert('Bir hata oluştu. Lütfen tekrar deneyin.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -63,19 +111,23 @@ const Contact = () => {
                   <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 12.5C15.75 12.5 14.55 12.3 13.43 11.93C13.08 11.82 12.69 11.9 12.41 12.17L10.21 14.37C7.38 12.93 5.06 10.62 3.62 7.79L5.82 5.58C6.1 5.31 6.18 4.92 6.07 4.57C5.7 3.45 5.5 2.25 5.5 1C5.5 0.45 5.05 0 4.5 0H1C0.45 0 0 0.45 0 1C0 10.39 7.61 18 17 18C17.55 18 18 17.55 18 17V13.5C18 12.95 17.55 12.5 17 12.5ZM9 0V10L12 7H18V0H9Z" fill="#fd550e" />
                   </svg>
-                  <span>+44 454 7800 112</span>
+                 <a href="tel:+905512078937">+90 551 207 89 37</a>
                 </li>
                 <li>
                   <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20 6.98V16C20 17.1 19.1 18 18 18H2C0.9 18 0 17.1 0 16V4C0 2.9 0.9 2 2 2H12.1C12.04 2.32 12 2.66 12 3C12 4.48 12.65 5.79 13.67 6.71L10 9L2 4V6L10 11L15.3 7.68C15.84 7.88 16.4 8 17 8C18.13 8 19.16 7.61 20 6.98ZM14 3C14 4.66 15.34 6 17 6C18.66 6 20 4.66 20 3C20 1.34 18.66 0 17 0C15.34 0 14 1.34 14 3Z" fill="#fd550e" />
                   </svg>
-                  <span>infotech@arino.com</span>
+                  <a href="mailto:info@data212.com">info@data212.com</a>
                 </li>
                 <li>
                   <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 20 7 20C7 20 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z" fill="#fd550e" />
                   </svg>
-                  <span>50 Wall Street Suite, 44150 <br />Ohio, United States</span>
+                  <span>Bahçeşehir 2. Kısım mah 
+Medeniyet caddesi <br />
+Hoşdere emlak konutları 652.ada 
+1. Blok kat:8 d:33 
+Başakşehir</span>
                 </li>
               </ul>
               <div className="cs-height_40 cs-height_lg_30"></div>
@@ -149,11 +201,18 @@ const Contact = () => {
                   <div className="cs-height_25 cs-height_lg_25"></div>
                 </div>
                 <div className="col-sm-12">
-                  <button className="cs-btn cs-style1" type="submit">
-                    <span>Send Message</span>
-                    <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z" fill="currentColor" />
-                    </svg>
+                  <button 
+                    className="cs-btn cs-style1" 
+                    type="submit"
+                    disabled={isSubmitting}
+                    style={{ opacity: isSubmitting ? 0.7 : 1, cursor: isSubmitting ? 'not-allowed' : 'pointer' }}
+                  >
+                    <span>{isSubmitting ? 'Gönderiliyor...' : 'Send Message'}</span>
+                    {!isSubmitting && (
+                      <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z" fill="currentColor" />
+                      </svg>
+                    )}
                   </button>
                 </div>
               </form>
@@ -165,8 +224,9 @@ const Contact = () => {
       <div className="cs-height_150 cs-height_lg_80"></div>
       
       <div className="cs-google_map">
+
         <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96708.34194156103!2d-74.03927096447748!3d40.759040329405195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ1JzMyLjUiTiA3NMKwMDInMTAuNyJX!5e0!3m2!1sen!2sbd!4v1626781101144!5m2!1sen!2sbd" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.6773365352803!2d28.654018084776173!3d41.08309670792097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b55940f7baced9%3A0x1bddea1d731cfb62!2sBah%C3%A7ekent%20Emlak%20Konutlar%C4%B1%20652%20ada!5e0!3m2!1sen!2str!4v1760990477291!5m2!1sen!2str" 
           allowFullScreen="" 
           loading="lazy"
           title="Google Map"
