@@ -115,19 +115,19 @@ const Portfolio = () => {
           <div className="cs-isotop_filter cs-style1">
             <ul className="cs-mp0 cs-center">
               <li className="active">
-                <span data-filter="*">All</span>
+                <button className="cs-filter-btn" data-filter="*">All</button>
               </li>
               <li>
-                <span data-filter=".ui_ux_design">UI/UX Design</span>
+                <button className="cs-filter-btn" data-filter=".ui_ux_design">UI/UX Design</button>
               </li>
               <li>
-                <span data-filter=".mobile_apps">Mobile Apps</span>
+                <button className="cs-filter-btn" data-filter=".mobile_apps">Mobile Apps</button>
               </li>
               <li>
-                <span data-filter=".logo_design">Logo Design</span>
+                <button className="cs-filter-btn" data-filter=".logo_design">Logo Design</button>
               </li>
               <li>
-                <span data-filter=".web_design">Web Design</span>
+                <button className="cs-filter-btn" data-filter=".web_design">Web Design</button>
               </li>
             </ul>
           </div>
