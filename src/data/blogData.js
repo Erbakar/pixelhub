@@ -1,20 +1,20 @@
 export const blogPosts = {
-  'complete-web-development-guide-2024': {
-    title: 'Complete Guide to Modern Web Development in 2024',
-    date: '15 Sep 2024',
+  'complete-web-development-guide-2025': {
+    title: 'Complete Guide to Modern Web Development in 2025',
+    date: '15 Sep 2025',
     author: 'PixelHub Team',
-    image: '/assets/img/blog_web_development_2024.jpeg',
+    image: '/assets/img/blog/blog1.png',
     category: 'Web Development',
-    excerpt: 'Discover the latest web development trends, frameworks, and best practices that are shaping the industry in 2024.',
+    excerpt: 'Discover the latest web development trends, frameworks, and best practices that are shaping the industry in 2025.',
     readTime: '8 min read',
     tags: ['JavaScript', 'React', 'Web Development', 'Frontend'],
     content: `
-      <p>Web development has evolved dramatically in 2024, with new frameworks, tools, and best practices emerging constantly. This comprehensive guide covers everything you need to know about modern web development trends and technologies.</p>
+      <p>Web development has evolved dramatically in 2025, with new frameworks, tools, and best practices emerging constantly. This comprehensive guide covers everything you need to know about modern web development trends and technologies.</p>
       
       <h3>Current Web Development Landscape</h3>
-      <p>The web development ecosystem in 2024 is characterized by performance optimization, user experience focus, and accessibility-first approaches. Developers are increasingly adopting modern frameworks like React 19, Next.js 14, and Vue 3 for building scalable applications.</p>
+      <p>The web development ecosystem in 2025 is characterized by performance optimization, user experience focus, and accessibility-first approaches. Developers are increasingly adopting modern frameworks like React 19, Next.js 14, and Vue 3 for building scalable applications.</p>
       
-      <h3>Essential Technologies for 2024</h3>
+      <h3>Essential Technologies for 2025</h3>
       <h4>1. Frontend Frameworks</h4>
       <ul>
         <li><strong>React 19:</strong> Concurrent features and improved performance</li>
@@ -44,17 +44,17 @@ export const blogPosts = {
     `
   },
   
-  'ui-ux-design-trends-2024': {
-    title: 'UI/UX Design Trends That Will Dominate 2024',
-    date: '12 Sep 2024',
+  'ui-ux-design-trends-2025': {
+    title: 'UI/UX Design Trends That Will Dominate 2025',
+    date: '12 Sep 2025',
     author: 'PixelHub Design Team',
-    image: '/assets/img/blog_ui_ux_trends_2024.jpeg',
+    image: '/assets/img/blog/blog2.png',
     category: 'UI/UX Design',
     excerpt: 'Explore the latest UI/UX design trends including neomorphism, dark mode, micro-interactions, and accessibility-first design.',
     readTime: '6 min read',
     tags: ['UI Design', 'UX Design', 'Design Trends', 'User Experience'],
     content: `
-      <p>The UI/UX design landscape continues to evolve rapidly, with 2024 bringing exciting new trends that prioritize user experience, accessibility, and innovative interactions.</p>
+      <p>The UI/UX design landscape continues to evolve rapidly, with 2025 bringing exciting new trends that prioritize user experience, accessibility, and innovative interactions.</p>
       
       <h3>1. Neomorphism and Soft UI</h3>
       <p>Neomorphism creates interfaces that appear to extrude from the background using subtle shadows and highlights for a tactile, almost physical appearance.</p>
@@ -68,21 +68,21 @@ export const blogPosts = {
       <h3>4. Inclusive and Accessible Design</h3>
       <p>Accessibility is no longer an afterthought but a fundamental requirement. Designing for all users creates better experiences for everyone.</p>
       
-      <p>Staying ahead of design trends while maintaining usability and accessibility is key to creating successful digital products in 2024.</p>
+      <p>Staying ahead of design trends while maintaining usability and accessibility is key to creating successful digital products in 2025.</p>
     `
   },
   
-  'react-vs-vue-angular-2024': {
-    title: 'React vs Vue vs Angular: Complete Framework Comparison 2024',
-    date: '10 Sep 2024',
+  'react-vs-vue-angular-2025': {
+    title: 'React vs Vue vs Angular: Complete Framework Comparison 2025',
+    date: '10 Sep 2025',
     author: 'PixelHub Development Team',
-    image: '/assets/img/blog_react_vue_angular.jpeg',
+    image: '/assets/img/blog/blog3.png',
     category: 'JavaScript Frameworks',
     excerpt: 'Comprehensive comparison of React, Vue, and Angular frameworks to help you choose the right one for your next project.',
     readTime: '10 min read',
     tags: ['React', 'Vue', 'Angular', 'JavaScript', 'Frontend'],
     content: `
-      <p>Choosing the right JavaScript framework is crucial for project success. In 2024, React, Vue, and Angular remain the top choices, each with unique strengths and use cases.</p>
+      <p>Choosing the right JavaScript framework is crucial for project success. In 2025, React, Vue, and Angular remain the top choices, each with unique strengths and use cases.</p>
       
       <h3>React: The Component King</h3>
       <p>React continues to dominate with its component-based architecture and massive ecosystem. Developed by Facebook, React emphasizes reusability and performance.</p>
@@ -97,11 +97,11 @@ export const blogPosts = {
     `
   },
   
-  'mobile-first-design-guide-2024': {
-    title: 'Mobile-First Design: Complete Guide for 2024',
-    date: '08 Sep 2024',
+  'mobile-first-design-guide-2025': {
+    title: 'Mobile-First Design: Complete Guide for 2025',
+    date: '08 Sep 2025',
     author: 'PixelHub Design Team',
-    image: '/assets/img/blog_mobile_first_design.jpeg',
+    image: '/assets/img/blog/blog4.png',
     category: 'Mobile Design',
     excerpt: 'Master mobile-first design principles, responsive breakpoints, and performance optimization for exceptional mobile experiences.',
     readTime: '7 min read',
@@ -127,11 +127,11 @@ export const blogPosts = {
     `
   },
   
-  'technical-seo-developers-2024': {
-    title: 'Complete SEO Guide for Developers: Technical SEO in 2024',
-    date: '05 Sep 2024',
+  'technical-seo-developers-2025': {
+    title: 'Complete SEO Guide for Developers: Technical SEO in 2025',
+    date: '05 Sep 2025',
     author: 'PixelHub SEO Team',
-    image: '/assets/img/blog_technical_seo.jpeg',
+    image: '/assets/img/blog/blog5.png',
     category: 'SEO',
     excerpt: 'Master technical SEO fundamentals including Core Web Vitals, structured data, and performance optimization for better search rankings.',
     readTime: '12 min read',
@@ -161,9 +161,9 @@ export const blogPosts = {
   
   'css-grid-flexbox-guide': {
     title: 'CSS Grid vs Flexbox: When to Use Which Layout Method',
-    date: '02 Sep 2024',
+    date: '02 Sep 2025',
     author: 'PixelHub Frontend Team',
-    image: '/assets/img/blog_css_grid_flexbox.jpeg',
+    image: '/assets/img/blog/blog6.png',
     category: 'CSS',
     excerpt: 'Learn the differences between CSS Grid and Flexbox, when to use each layout method, and how to combine them effectively.',
     readTime: '9 min read',
@@ -196,10 +196,10 @@ export const blogPosts = {
   },
   
   'javascript-performance-optimization': {
-    title: 'JavaScript Performance Optimization: Advanced Techniques for 2024',
-    date: '28 Aug 2024',
+    title: 'JavaScript Performance Optimization: Advanced Techniques for 2025',
+    date: '28 Aug 2025',
     author: 'PixelHub Performance Team',
-    image: '/assets/img/blog_js_performance.jpeg',
+    image: '/assets/img/blog/blog7.png',
     category: 'JavaScript',
     excerpt: 'Master advanced JavaScript performance optimization techniques including code splitting, lazy loading, and memory management.',
     readTime: '11 min read',
@@ -238,9 +238,9 @@ const routes = [
   
   'design-systems-component-libraries': {
     title: 'Building Scalable Design Systems and Component Libraries',
-    date: '25 Aug 2024',
+    date: '25 Aug 2025',
     author: 'PixelHub Design System Team',
-    image: '/assets/img/blog_design_systems.jpeg',
+    image: '/assets/img/blog/blog8.png',
     category: 'Design Systems',
     excerpt: 'Learn how to create maintainable design systems and component libraries that scale across teams and products.',
     readTime: '10 min read',
@@ -265,11 +265,11 @@ const routes = [
     `
   },
   
-  'progressive-web-apps-2024': {
+  'progressive-web-apps-2025': {
     title: 'Progressive Web Apps (PWAs): The Future of Mobile Development',
-    date: '22 Aug 2024',
+    date: '22 Aug 2025',
     author: 'PixelHub Mobile Team',
-    image: '/assets/img/blog_progressive_web_apps.jpeg',
+    image: '/assets/img/blog/blog9.png',
     category: 'Mobile Development',
     excerpt: 'Discover how Progressive Web Apps combine the best of web and mobile apps, offering native-like experiences through web technologies.',
     readTime: '8 min read',
@@ -306,9 +306,9 @@ const routes = [
   
   'web-accessibility-wcag-guide': {
     title: 'Web Accessibility and WCAG 2.1: A Developer\'s Complete Guide',
-    date: '18 Aug 2024',
+    date: '18 Aug 2025',
     author: 'PixelHub Accessibility Team',
-    image: '/assets/img/blog_web_accessibility.jpeg',
+    image: '/assets/img/blog/blog10.png',
     category: 'Accessibility',
     excerpt: 'Master web accessibility standards and WCAG 2.1 guidelines to create inclusive digital experiences for all users.',
     readTime: '9 min read',
