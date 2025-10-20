@@ -31,7 +31,11 @@ const Contact = () => {
         keywords="contact pixelhub, get quote, web design consultation, digital agency contact, project inquiry"
         url="https://pixelhub.com/contact"
       />
-      <div className="cs-page_heading cs-bg cs-center" data-src="/assets/img/contact_hero_bg.jpeg">
+      <div 
+        className="cs-page_heading cs-bg cs-center" 
+        data-src="/assets/img/contact_hero_bg.jpeg"
+        style={{backgroundImage: 'url(/assets/img/contact_hero_bg.jpeg)'}}
+      >
         <div className="container">
           <div className="cs-page_heading_in">
             <h1 className="cs-page_title cs-font_50 cs-white_color">Contact Us</h1>

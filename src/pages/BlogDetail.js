@@ -63,7 +63,11 @@ const BlogDetail = () => {
         structuredData={blogStructuredData}
       />
       
-      <div className="cs-page_heading cs-bg cs-center" data-src="/assets/img/blog_hero_bg.jpeg">
+      <div 
+        className="cs-page_heading cs-bg cs-center" 
+        data-src="/assets/img/blog_hero_bg.jpeg"
+        style={{backgroundImage: 'url(/assets/img/blog_hero_bg.jpeg)'}}
+      >
         <div className="container">
           <div className="cs-page_heading_in">
             <h1 className="cs-page_title cs-font_50 cs-white_color">{post.title}</h1>

@@ -602,6 +602,12 @@
       overflow: auto;
       max-height: calc(100vh - 80px);
       line-height: 1.6em;
+      z-index: 9999;
+
+      // Mobil menü açık state
+      &.cs-nav_list_open {
+        display: block !important;
+      }
 
       ul {
         padding-left: 15px;
@@ -611,6 +617,12 @@
       a {
         display: block;
         padding: 8px 20px;
+        color: $white;
+        text-decoration: none;
+        
+        &:hover {
+          color: $accent;
+        }
       }
     }
 

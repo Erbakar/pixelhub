@@ -53,12 +53,46 @@ const useScrollEffects = (locationPath = null) => {
 
     // Dynamic Background
     const dynamicBackground = () => {
-      document.querySelectorAll('[data-src]').forEach((element) => {
+      const elements = document.querySelectorAll('[data-src]');
+      
+      elements.forEach((element) => {
         const src = element.getAttribute('data-src');
         if (src) {
+          // Background'ın düzgün yüklendiğinden emin olmak için
+          const img = new Image();
+          img.onload = () => {
+            element.style.backgroundImage = `url(${src})`;
+            element.style.opacity = '1';
+          };
+          img.onerror = () => {
+            console.warn('Failed to load background image:', src);
+            // Fallback için inline style ekle
+            element.style.backgroundImage = `url(${src})`;
+          };
+          img.src = src;
+          
+          // Immediate fallback
           element.style.backgroundImage = `url(${src})`;
+          element.classList.add('bg-loaded');
         }
       });
+    };
+
+    // Background'ları daha sık kontrol et (mobil için)
+    const retryBackgrounds = () => {
+      let attempts = 0;
+      const maxAttempts = 10;
+      
+      const checkAndRetry = () => {
+        const elementsWithDataSrc = document.querySelectorAll('[data-src]:not(.bg-loaded)');
+        if (elementsWithDataSrc.length > 0 && attempts < maxAttempts) {
+          dynamicBackground();
+          attempts++;
+          setTimeout(checkAndRetry, 500);
+        }
+      };
+      
+      setTimeout(checkAndRetry, 100);
     };
 
     // Counter Animation
@@ -142,6 +176,7 @@ const useScrollEffects = (locationPath = null) => {
     const handleLoad = () => {
       preloader();
       dynamicBackground();
+      retryBackgrounds();
       counterInit();
     };
 
@@ -151,6 +186,17 @@ const useScrollEffects = (locationPath = null) => {
 
     // Initial calls
     dynamicBackground();
+    retryBackgrounds();
+    
+    // DOMContentLoaded event için de ekle (daha erken çalışır)
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+          dynamicBackground();
+          retryBackgrounds();
+        }, 100);
+      });
+    }
     
     // Initialize WOW.js for animations
     if (typeof window.WOW !== 'undefined') {

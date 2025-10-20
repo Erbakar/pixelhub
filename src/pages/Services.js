@@ -41,7 +41,11 @@ const Services = () => {
         url="https://pixelhub.com/services"
         structuredData={servicesStructuredData}
       />
-      <div className="cs-page_heading cs-bg cs-center" data-src="/assets/img/service_hero_bg.jpeg">
+      <div 
+        className="cs-page_heading cs-bg cs-center" 
+        data-src="/assets/img/service_hero_bg.jpeg"
+        style={{backgroundImage: 'url(/assets/img/service_hero_bg.jpeg)'}}
+      >
         <div className="container">
           <div className="cs-page_heading_in">
             <h1 className="cs-page_title cs-font_50 cs-white_color">Services</h1>

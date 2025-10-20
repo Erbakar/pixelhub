@@ -70,7 +70,12 @@ const Home = () => {
       />
       
       {/* Hero Section */}
-      <div className="cs-hero cs-style1 cs-bg cs-fixed_bg cs-shape_wrap_1" data-src="/assets/img/hero_bg.jpeg" id="home">
+      <div 
+        className="cs-hero cs-style1 cs-bg cs-fixed_bg cs-shape_wrap_1" 
+        data-src="/assets/img/hero_bg.jpeg" 
+        style={{backgroundImage: 'url(/assets/img/hero_bg.jpeg)'}}
+        id="home"
+      >
         <div className="cs-shape_1"></div>
         <div className="cs-shape_1"></div>
         <div className="cs-shape_1"></div>
