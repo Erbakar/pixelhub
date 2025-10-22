@@ -19,34 +19,34 @@ const useScrollEffects = (locationPath = null) => {
       }
     };
 
-    // jQuery'nin yüklenmesini bekle
+    // jQuery'nin yüklenmesini bekle - daha hızlı kontrol
     const initEffects = () => {
       if (typeof window.$ === 'undefined') {
-        setTimeout(initEffects, 100);
+        setTimeout(initEffects, 100); // Increased back to 100ms for stability
         return;
       }
       
       // Önce temizliği yap
       cleanupPreviousSliders();
-    // Preloader
+    // Preloader - Optimized for faster loading
     const preloader = () => {
       const preloaderIn = document.querySelector('.cs-preloader_in');
       const preloaderEl = document.querySelector('.cs-preloader');
       
       if (preloaderIn) {
         preloaderIn.style.opacity = '0';
-        preloaderIn.style.transition = 'opacity 0.3s ease';
+        preloaderIn.style.transition = 'opacity 0.2s ease';
       }
       
       if (preloaderEl) {
-        // Ana sayfa için daha hızlı preloader kapanma
-        const preloaderDelay = locationPath === '/' ? 50 : 150;
+        // Balanced preloader timing
+        const preloaderDelay = locationPath === '/' ? 200 : 300;
         setTimeout(() => {
           preloaderEl.style.opacity = '0';
-          preloaderEl.style.transition = 'opacity 0.5s ease';
+          preloaderEl.style.transition = 'opacity 0.3s ease';
           setTimeout(() => {
             preloaderEl.style.display = 'none';
-          }, 500);
+          }, 300);
         }, preloaderDelay);
       }
     };
@@ -78,21 +78,21 @@ const useScrollEffects = (locationPath = null) => {
       });
     };
 
-    // Background'ları daha sık kontrol et (mobil için)
+    // Background'ları daha sık kontrol et (mobil için) - balanced
     const retryBackgrounds = () => {
       let attempts = 0;
-      const maxAttempts = 10;
+      const maxAttempts = 8; // Balanced attempt count
       
       const checkAndRetry = () => {
         const elementsWithDataSrc = document.querySelectorAll('[data-src]:not(.bg-loaded)');
         if (elementsWithDataSrc.length > 0 && attempts < maxAttempts) {
           dynamicBackground();
           attempts++;
-          setTimeout(checkAndRetry, 500);
+          setTimeout(checkAndRetry, 300); // Balanced timing
         }
       };
       
-      setTimeout(checkAndRetry, 100);
+      setTimeout(checkAndRetry, 200); // Balanced initial delay
     };
 
     // Counter Animation
@@ -341,8 +341,8 @@ const useScrollEffects = (locationPath = null) => {
       }
     };
 
-    // Slider'ları initialize et - ana sayfa için daha hızlı
-    const initDelay = locationPath === '/' ? 500 : 1500;
+    // Slider'ları initialize et - ana sayfa için daha güvenli
+    const initDelay = locationPath === '/' ? 500 : 1000;
     setTimeout(initSliders, initDelay);
     
     // Scroll up click handler

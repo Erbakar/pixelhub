@@ -2,6 +2,10 @@ import { useEffect } from 'react';
 
 const useInteractiveEffects = (locationPath = null) => {
   useEffect(() => {
+    // Sadece gerekli sayfalarda interactive effects çalıştır
+    if (locationPath !== '/' && locationPath !== '/portfolio' && locationPath !== '/services') {
+      return;
+    }
     // Tabs functionality
     const initTabs = () => {
       const tabLinks = document.querySelectorAll('.cs-tabs .cs-tab_links a');

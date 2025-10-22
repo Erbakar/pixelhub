@@ -198,7 +198,7 @@ const Home = () => {
                 <div className="col-lg-3 col-sm-6">
                   <div className="cs-hobble">
                     <Link to="/services" className="cs-card cs-style1 cs-hover_layer1">
-                      <img src="/assets/img/service_1.jpeg" alt="Service" />
+                      <img src="/assets/img/service_1.jpeg" alt="Service" loading="lazy" />
                       <div className="cs-card_overlay"></div>
                       <div className="cs-card_info">
                         <span className="cs-hover_layer3 cs-accent_bg"></span>
@@ -212,7 +212,7 @@ const Home = () => {
                 <div className="col-lg-3 col-sm-6">
                   <div className="cs-hobble">
                     <Link to="/services" className="cs-card cs-style1 cs-hover_layer1">
-                      <img src="/assets/img/service_2.jpeg" alt="Service" />
+                      <img src="/assets/img/service_2.jpeg" alt="Service" loading="lazy" />
                       <div className="cs-card_overlay"></div>
                       <div className="cs-card_info">
                         <span className="cs-hover_layer3 cs-accent_bg"></span>
@@ -225,7 +225,7 @@ const Home = () => {
                 <div className="col-lg-3 col-sm-6">
                   <div className="cs-hobble">
                     <Link to="/services" className="cs-card cs-style1 cs-hover_layer1">
-                      <img src="/assets/img/service_3.jpeg" alt="Service" />
+                      <img src="/assets/img/service_3.jpeg" alt="Service" loading="lazy" />
                       <div className="cs-card_overlay"></div>
                       <div className="cs-card_info">
                         <span className="cs-hover_layer3 cs-accent_bg"></span>
@@ -239,7 +239,7 @@ const Home = () => {
                 <div className="col-lg-3 col-sm-6">
                   <div className="cs-hobble">
                     <Link to="/services" className="cs-card cs-style1 cs-hover_layer1">
-                      <img src="/assets/img/service_4.jpeg" alt="Service" />
+                      <img src="/assets/img/service_4.jpeg" alt="Service" loading="lazy" />
                       <div className="cs-card_overlay"></div>
                       <div className="cs-card_info">
                         <span className="cs-hover_layer3 cs-accent_bg"></span>
@@ -332,74 +332,7 @@ const Home = () => {
 
       <div className="cs-height_150 cs-height_lg_80"></div>
 
-      {/* Awards Section */}
-      <section className="cs-shape_wrap_2">
-        <div className="cs-shape_2">
-          <div></div>
-        </div>
-        <div className="container">
-          <div className="cs-slider cs-style1 cs-gap-24">
-            <div className="cs-slider_left">
-              <div className="cs-section_heading cs-style1">
-                <h3 className="cs-section_subtitle wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">Our Awards</h3>
-                <h2 className="cs-section_title">We get multiple awards</h2>
-              </div>
-              <div className="cs-height_45 cs-height_lg_20"></div>
-              <div className="cs-slider_arrows cs-style1 cs-primary_color">
-                <div className="cs-left_arrow cs-center">
-                  <svg width="26" height="13" viewBox="0 0 26 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.469791 5.96967C0.176899 6.26256 0.176899 6.73744 0.469791 7.03033L5.24276 11.8033C5.53566 12.0962 6.01053 12.0962 6.30342 11.8033C6.59632 11.5104 6.59632 11.0355 6.30342 10.7426L2.06078 6.5L6.30342 2.25736C6.59632 1.96447 6.59632 1.48959 6.30342 1.1967C6.01053 0.903806 5.53566 0.903806 5.24276 1.1967L0.469791 5.96967ZM26.0001 5.75L1.00012 5.75V7.25L26.0001 7.25V5.75Z" fill="currentColor" />
-                  </svg>
-                </div>
-                <div className="cs-right_arrow cs-center">
-                  <svg width="26" height="13" viewBox="0 0 26 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M25.5305 7.03033C25.8233 6.73744 25.8233 6.26256 25.5305 5.96967L20.7575 1.1967C20.4646 0.903806 19.9897 0.903806 19.6968 1.1967C19.4039 1.48959 19.4039 1.96447 19.6968 2.25736L23.9395 6.5L19.6968 10.7426C19.4039 11.0355 19.4039 11.5104 19.6968 11.8033C19.9897 12.0962 20.4646 12.0962 20.7575 11.8033L25.5305 7.03033ZM0.00012207 7.25H25.0001V5.75H0.00012207V7.25Z" fill="currentColor" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div className="cs-slider_right">
-              <div className="cs-slider_container" data-autoplay="0" data-loop="1" data-speed="600" data-center="0" data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="2" data-md-slides="2" data-lg-slides="2" data-add-slides="2">
-                <div className="cs-slider_wrapper">
-                  <div className="cs-slide">
-                    <div className="cs-time_line cs-style1">
-                      <h3 className="cs-accent_color">2019</h3>
-                      <h2>Google awards</h2>
-                      <p>Website of the day</p>
-                      <p>Mobile excellence</p>
-                    </div>
-                    <div className="cs-height_40 cs-height_lg_30"></div>
-                    <div className="cs-time_line cs-style1">
-                      <h3 className="cs-accent_color">2021</h3>
-                      <h2>CSS awards design</h2>
-                      <p>Honorable mention</p>
-                      <p>Desktop excellence</p>
-                    </div>
-                  </div>
-                  <div className="cs-slide">
-                    <div className="cs-time_line cs-style1">
-                      <h3 className="cs-accent_color">2020</h3>
-                      <h2>Awwwards</h2>
-                      <p>Site of the day</p>
-                      <p>Developer award</p>
-                    </div>
-                    <div className="cs-height_40 cs-height_lg_30"></div>
-                    <div className="cs-time_line cs-style1">
-                      <h3 className="cs-accent_color">2022</h3>
-                      <h2>FWA awards</h2>
-                      <p>Mobile of the day</p>
-                      <p>Site of the month</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div className="cs-height_150 cs-height_lg_80"></div>
-
+  
       {/* Team Section */}
       <section>
         <div className="container">
@@ -414,7 +347,7 @@ const Home = () => {
                 <div className="cs-slide">
                   <div className="cs-team cs-style1">
                     <div className="cs-member_thumb">
-                      <img src="/assets/img/member_1.jpeg" alt="Member" />
+                      <img src="/assets/img/member_1.jpeg" alt="Member" loading="lazy" />
                       <div className="cs-member_overlay"></div>
                       <div className="cs-member_btn">
                         <span className="cs-plus"></span>
@@ -431,7 +364,7 @@ const Home = () => {
                 <div className="cs-slide">
                   <div className="cs-team cs-style1">
                     <div className="cs-member_thumb">
-                      <img src="/assets/img/member_2.jpeg" alt="Member" />
+                      <img src="/assets/img/member_2.jpeg" alt="Member" loading="lazy" />
                       <div className="cs-member_overlay"></div>
                       <div className="cs-member_btn">
                         <span className="cs-plus"></span>
@@ -448,7 +381,7 @@ const Home = () => {
                 <div className="cs-slide">
                   <div className="cs-team cs-style1">
                     <div className="cs-member_thumb">
-                      <img src="/assets/img/member_3.jpeg" alt="Member" />
+                      <img src="/assets/img/member_3.jpeg" alt="Member" loading="lazy" />
                       <div className="cs-member_overlay"></div>
                       <div className="cs-member_btn">
                         <span className="cs-plus"></span>
@@ -465,7 +398,7 @@ const Home = () => {
                 <div className="cs-slide">
                   <div className="cs-team cs-style1">
                     <div className="cs-member_thumb">
-                      <img src="/assets/img/member_4.jpeg" alt="Member" />
+                      <img src="/assets/img/member_4.jpeg" alt="Member" loading="lazy" />
                       <div className="cs-member_overlay"></div>
                       <div className="cs-member_btn">
                         <span className="cs-plus"></span>
@@ -506,9 +439,18 @@ const Home = () => {
               <div className="slider-nav cs-style1">
                 <div className="slider-for_item item-nav">
                   <div className="slider-nav_item">
+                      <div className="cs-rotate_img">
+                        <div className="cs-rotate_img_in">
+                          <img src="/assets/img/testimonial_1.jpeg" alt="Client testimonial" loading="lazy" />
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div className="slider-for_item item-nav">
+                  <div className="slider-nav_item">
                     <div className="cs-rotate_img">
                       <div className="cs-rotate_img_in">
-                        <img src="/assets/img/testimonial_1.jpeg" alt="Client testimonial" />
+                        <img src="/assets/img/testimonial_2.jpeg" alt="Client testimonial" loading="lazy" />
                       </div>
                     </div>
                   </div>
@@ -517,16 +459,7 @@ const Home = () => {
                   <div className="slider-nav_item">
                     <div className="cs-rotate_img">
                       <div className="cs-rotate_img_in">
-                        <img src="/assets/img/testimonial_2.jpeg" alt="Client testimonial" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="slider-for_item item-nav">
-                  <div className="slider-nav_item">
-                    <div className="cs-rotate_img">
-                      <div className="cs-rotate_img_in">
-                        <img src="/assets/img/testimonial_3.jpeg" alt="Client testimonial" />
+                        <img src="/assets/img/testimonial_3.jpeg" alt="Client testimonial" loading="lazy" />
                       </div>
                     </div>
                   </div>

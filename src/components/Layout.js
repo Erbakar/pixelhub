@@ -2,6 +2,7 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
+import Preloader from './Preloader';
 import useScrollEffects from '../hooks/useScrollEffects';
 import useInteractiveEffects from '../hooks/useInteractiveEffects';
 import useCounterAnimation from '../hooks/useCounterAnimation';
@@ -10,15 +11,14 @@ const Layout = ({ children }) => {
   const location = useLocation();
   
   // Hook'ları location değişikliklerinde yeniden başlatmak için key olarak location.pathname kullanıyoruz
+  // Tüm hook'ları her zaman çağır, içlerinde kendi optimizasyonlarını yapsınlar
   useScrollEffects(location.pathname);
   useInteractiveEffects(location.pathname);
   useCounterAnimation(location.pathname);
 
   return (
     <div>
-      <div className="cs-preloader cs-center">
-        <div className="cs-preloader_in"></div>
-      </div>
+      <Preloader />
       <Header />
       <main>{children}</main>
       <Footer />

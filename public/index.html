@@ -33,6 +33,13 @@
     
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="canonical" href="https://pixelhub.com/" />
+    
+    <!-- Resource hints for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -49,7 +56,7 @@
     -->
     <title>PixelHub - Creative Agency</title>
     
-    <!-- CSS Files -->
+    <!-- CSS Files - Load in correct order for stability -->
     <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/plugins/bootstrap.min.css">
     <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/plugins/fontawesome.min.css">
     <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/plugins/slick.css">
@@ -71,7 +78,7 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     
-    <!-- JavaScript Files -->
+    <!-- JavaScript Files - Load in correct order for stability -->
     <script src="%PUBLIC_URL%/assets/js/plugins/jquery-3.6.0.min.js"></script>
     <script src="%PUBLIC_URL%/assets/js/plugins/jquery-ui.min.js"></script>
     <script src="%PUBLIC_URL%/assets/js/plugins/jquery.slick.min.js"></script>

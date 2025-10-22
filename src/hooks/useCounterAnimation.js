@@ -2,6 +2,10 @@ import { useEffect } from 'react';
 
 const useCounterAnimation = (locationPath = null) => {
   useEffect(() => {
+    // Counter animation sadece ana sayfa ve about sayfasında
+    if (locationPath !== '/' && locationPath !== '/about') {
+      return;
+    }
     // Önceki sayfadan kalan counter animasyonlarını sıfırla
     const resetCounters = () => {
       const counters = document.querySelectorAll('.odometer');
@@ -55,7 +59,7 @@ const useCounterAnimation = (locationPath = null) => {
     // Önce counter'ları sıfırla, sonra animasyonu başlat
     resetCounters();
     
-    // DOM yüklendikten sonra başlat
+    // DOM yüklendikten sonra başlat - daha güvenli
     const timeout = setTimeout(animateCounters, 1000);
     
     return () => clearTimeout(timeout);
