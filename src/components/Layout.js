@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
@@ -9,6 +9,11 @@ import useCounterAnimation from '../hooks/useCounterAnimation';
 
 const Layout = ({ children }) => {
   const location = useLocation();
+  
+  // Sayfa değişikliklerinde scroll'u en üste al
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
   
   // Hook'ları location değişikliklerinde yeniden başlatmak için key olarak location.pathname kullanıyoruz
   // Tüm hook'ları her zaman çağır, içlerinde kendi optimizasyonlarını yapsınlar
