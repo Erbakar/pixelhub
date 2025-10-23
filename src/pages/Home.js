@@ -14,20 +14,21 @@ const Home = () => {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "PixelHub",
-    "description": "Creative digital agency specializing in web design, development, and digital marketing",
+    "description": "Türkiye'nin önde gelen yazılım firması. Web tasarım, mobil uygulama geliştirme, e-ticaret çözümleri ve dijital pazarlama hizmetleri.",
     "url": "https://pixelhub.com",
     "logo": "https://pixelhub.com/assets/img/logo.svg",
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+44 454 7800 112",
+      "telephone": "+90 212 555 0123",
       "contactType": "customer service",
       "email": "info@pixelhub.com"
     },
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "50 Wall Street Suite, 44150",
-      "addressLocality": "Ohio",
-      "addressCountry": "United States"
+      "streetAddress": "Maslak Mahallesi, Büyükdere Caddesi",
+      "addressLocality": "İstanbul",
+      "addressRegion": "İstanbul",
+      "addressCountry": "TR"
     },
     "sameAs": [
       "https://linkedin.com/company/pixelhub",
@@ -38,23 +39,23 @@ const Home = () => {
     "service": [
       {
         "@type": "Service",
-        "name": "UI/UX Design",
-        "description": "Professional user interface and user experience design services"
+        "name": "Web Tasarım",
+        "description": "Profesyonel web sitesi tasarımı ve kullanıcı deneyimi hizmetleri"
       },
       {
         "@type": "Service", 
-        "name": "Web Development",
-        "description": "Custom website development and web application solutions"
+        "name": "Mobil Uygulama Geliştirme",
+        "description": "iOS ve Android platformları için özel mobil uygulama geliştirme"
       },
       {
         "@type": "Service",
-        "name": "Mobile App Development", 
-        "description": "Native and cross-platform mobile application development"
+        "name": "E-ticaret Çözümleri", 
+        "description": "Online mağaza kurulumu ve e-ticaret platformu geliştirme"
       },
       {
         "@type": "Service",
-        "name": "Digital Marketing",
-        "description": "Comprehensive digital marketing and SEO optimization services"
+        "name": "Dijital Pazarlama",
+        "description": "Kapsamlı dijital pazarlama ve SEO optimizasyon hizmetleri"
       }
     ]
   };
@@ -62,9 +63,9 @@ const Home = () => {
   return (
     <div>
       <SEO 
-        title="PixelHub - Creative Digital Agency | Web Design & Development"
-        description="Transform your business with PixelHub's professional web design, UI/UX design, mobile app development, and digital marketing services. Get a quote today!"
-        keywords="web design, UI/UX design, mobile app development, digital marketing, creative agency, web development, branding, SEO optimization"
+        title="PixelHub - Türkiye'nin Önde Gelen Yazılım Firması | Web Tasarım & Mobil Uygulama"
+        description="İşinizi PixelHub'ın profesyonel web tasarım, mobil uygulama geliştirme, e-ticaret çözümleri ve dijital pazarlama hizmetleri ile dönüştürün. Hemen teklif alın!"
+        keywords="yazılım firması, web tasarım, mobil uygulama, e-ticaret, dijital pazarlama, yazılım geliştirme, İstanbul yazılım şirketi, web sitesi tasarımı, SEO, dijital dönüşüm"
         url="https://pixelhub.com/"
         structuredData={structuredData}
       />

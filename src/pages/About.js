@@ -6,9 +6,9 @@ const About = () => {
   return (
     <div>
       <SEO 
-        title="About Us - PixelHub Creative Digital Agency"
-        description="Learn about PixelHub's journey, our expert team, and our commitment to delivering exceptional digital solutions for businesses worldwide."
-        keywords="about pixelhub, creative agency team, digital agency, web design company, our story"
+        title="Hakkımızda - PixelHub Yazılım Firması | İstanbul Yazılım Şirketi"
+        description="PixelHub'un hikayesi, uzman ekibimiz ve işletmeler için olağanüstü dijital çözümler sunma konusundaki kararlılığımız hakkında bilgi edinin."
+        keywords="pixelhub hakkında, yazılım firması ekibi, dijital ajans, web tasarım şirketi, hikayemiz, İstanbul yazılım şirketi, yazılım geliştirme ekibi"
         url="https://pixelhub.com/about"
       />
       <div 

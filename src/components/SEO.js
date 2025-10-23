@@ -1,9 +1,9 @@
 import React from 'react';
 
 const SEO = ({ 
-  title = "PixelHub - Creative Digital Agency",
-  description = "Professional web design, development, and digital marketing services. Transform your business with our creative solutions.",
-  keywords = "web design, UI/UX design, mobile app development, digital marketing, creative agency",
+  title = "PixelHub - Türkiye'nin Önde Gelen Yazılım Firması",
+  description = "Profesyonel web tasarım, mobil uygulama geliştirme, e-ticaret çözümleri ve dijital pazarlama hizmetleri. İşinizi dijital dünyada öne çıkarın.",
+  keywords = "yazılım firması, web tasarım, mobil uygulama, e-ticaret, dijital pazarlama, yazılım geliştirme, İstanbul yazılım şirketi, web sitesi tasarımı, SEO, dijital dönüşüm, yazılım çözümleri",
   url = "https://pixelhub.com/",
   image = "/assets/img/og-image.jpg",
   type = "website",

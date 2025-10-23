@@ -11,8 +11,8 @@ const Services = () => {
       "@type": "Organization",
       "name": "PixelHub"
     },
-    "serviceType": "Digital Agency Services",
-    "description": "Comprehensive digital services including web design, development, mobile apps, and digital marketing",
+    "serviceType": "Yazılım Geliştirme Hizmetleri",
+    "description": "Web tasarım, mobil uygulama geliştirme, e-ticaret çözümleri ve dijital pazarlama dahil kapsamlı dijital hizmetler",
     "offers": [
       {
         "@type": "Offer",
@@ -35,9 +35,9 @@ const Services = () => {
   return (
     <div>
       <SEO 
-        title="Our Services - PixelHub Digital Agency | Web Design & Development"
-        description="Explore PixelHub's comprehensive digital services: UI/UX design, web development, mobile apps, digital marketing, branding, and SEO optimization."
-        keywords="digital services, web design services, UI/UX design, mobile app development, digital marketing, SEO services, branding services"
+        title="Hizmetlerimiz - PixelHub Yazılım Firması | Web Tasarım & Mobil Uygulama"
+        description="PixelHub'ın kapsamlı dijital hizmetlerini keşfedin: web tasarım, mobil uygulama geliştirme, e-ticaret çözümleri, dijital pazarlama ve SEO optimizasyonu."
+        keywords="yazılım hizmetleri, web tasarım hizmetleri, mobil uygulama geliştirme, e-ticaret çözümleri, dijital pazarlama, SEO hizmetleri, yazılım çözümleri"
         url="https://pixelhub.com/services"
         structuredData={servicesStructuredData}
       />

@@ -74,9 +74,9 @@ const Contact = () => {
   return (
     <div>
       <SEO 
-        title="Contact Us - PixelHub Digital Agency | Get a Quote Today"
-        description="Get in touch with PixelHub for your next digital project. Contact our expert team for web design, development, and digital marketing services."
-        keywords="contact pixelhub, get quote, web design consultation, digital agency contact, project inquiry"
+        title="İletişim - PixelHub Yazılım Firması | Hemen Teklif Alın"
+        description="Bir sonraki dijital projeniz için PixelHub ile iletişime geçin. Web tasarım, mobil uygulama geliştirme ve dijital pazarlama hizmetleri için uzman ekibimizle iletişime geçin."
+        keywords="pixelhub iletişim, teklif al, web tasarım danışmanlığı, yazılım firması iletişim, proje danışmanlığı, İstanbul yazılım şirketi"
         url="https://pixelhub.com/contact"
       />
       <div 

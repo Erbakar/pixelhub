@@ -87,9 +87,9 @@ const Blog = () => {
   return (
     <div>
       <SEO 
-        title="Blog - PixelHub | Web Design Tips, Development Tutorials & Digital Marketing"
-        description="Read PixelHub's latest blog posts about web design trends, development tutorials, digital marketing strategies, and industry insights."
-        keywords="web design blog, development tutorials, digital marketing blog, design trends, technology blog, UI/UX tips"
+        title="Blog - PixelHub | Web Tasarım İpuçları, Yazılım Geliştirme & Dijital Pazarlama"
+        description="PixelHub'ın web tasarım trendleri, yazılım geliştirme eğitimleri, dijital pazarlama stratejileri ve sektör içgörüleri hakkındaki en son blog yazılarını okuyun."
+        keywords="web tasarım blog, yazılım geliştirme eğitimleri, dijital pazarlama blog, tasarım trendleri, teknoloji blog, yazılım ipuçları"
         url="https://pixelhub.com/blog"
         type="blog"
       />

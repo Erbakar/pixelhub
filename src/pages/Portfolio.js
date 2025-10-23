@@ -80,9 +80,9 @@ const Portfolio = () => {
   return (
     <div>
       <SEO 
-        title="Portfolio - PixelHub Creative Works | Web Design & Development Projects"
-        description="Explore PixelHub's portfolio of creative projects including UI/UX designs, web development, mobile apps, and branding solutions for various industries."
-        keywords="portfolio, web design projects, UI/UX portfolio, mobile app portfolio, creative projects, design showcase"
+        title="Portföy - PixelHub Yaratıcı Projeler | Web Tasarım & Mobil Uygulama Projeleri"
+        description="PixelHub'ın yaratıcı projeler portföyünü keşfedin: web tasarım, mobil uygulama geliştirme, e-ticaret çözümleri ve çeşitli sektörler için marka çözümleri."
+        keywords="portföy, web tasarım projeleri, mobil uygulama portföyü, e-ticaret projeleri, yaratıcı projeler, tasarım vitrin, yazılım projeleri"
         url="https://pixelhub.com/portfolio"
         type="website"
       />
