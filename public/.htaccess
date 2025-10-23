@@ -1,14 +1,24 @@
 Options -MultiViews
 RewriteEngine On
 
-# Handle Angular and React Router
-# If a requested file doesn't exist as a file or directory,
-# serve the index.html file
+# Handle React Router (SPA) routing
+# Redirect all requests to index.html for client-side routing
+# This ensures that direct URL access and page refreshes work correctly
 
-# Handle client-side routing for React Router
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
+# First, try to serve the request as a file
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# If the requested resource doesn't exist as a file or directory,
+# redirect to index.html (React Router will handle the routing)
+RewriteRule ^.*$ /index.html [L]
+
+# Alternative method (more explicit for React Router)
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_URI} !^/index\.html$
+# RewriteRule ^.*$ /index.html [L]
 
 # Security Headers
 <IfModule mod_headers.c>
